@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DCA Signature</string>
+    <string name="sign">DCA Signature is more than just a Cafe - it is a destination that aims to provide a memorable experience to its guests.The cafes about page reflects its commitment to quality, innovation, and customer satisfaction. At DCA Signature , they take pride in their concept dining experience that bridges the gap between traditional and modern flavors. Their menu is carefully crafted to showcase the best of both worlds, creating a unique fusion of tastes that are both familiar and exciting. But DCA Signature is more than just food. It is a place where people can come together, share stories, and create new memories. The Cafes cozy ambiance and warm hospitality create a welcoming atmosphere that makes guests feel at home. Moreover, DCA Signature commitment to quality extends beyond its menu. They are dedicated to using only the freshest and highest-quality ingredients in their dishes, ensuring that every meal is a feast for the senses. Whether you are looking for a place to enjoy a delicious meal, celebrate a special occasion, or just unwind after a long day, DCA Signature is the perfect choice. With its exceptional food, warm ambiance, and friendly service, it is a destination that is sure to leave a lasting impression.</string>
+    <string name="acc">For more information visit or contact us on our social media accounts.</string>
+    <string name="all_day_breakfast">All Day Breakfast</string>
+    <string name="angus_beef">Angus Beef</string>
+    <string name="grilled_fried_burgers">Grilled and Fried Burgers</string>
+    <string name="appetizers">Appetizers</string>
+    <string name="adds_on">Adds On</string>
+    <string name="salads">Salads</string>
+    <string name="apartment_style_pasta">Apartment Style Pasta</string>
+    <string name="sauce_and_dips">Sauce and Dips</string>
+    <string name="sandwiches">Sandwiches</string>
+    <string name="belgian_waffles">Belgian Waffles</string>
+    <string name="buffalo_wings">Buffalo Wings</string>
+    <string name="rice_meals">Rice Meals</string>
+    <string name="expresso_hot_drinks">Expresso Hot Drinks</string>
+    <string name="milkshakes">Milkshakes</string>
+    <string name="iced_tea_influsion">Iced Tea Influsion</string>
+    <string name="soda_pop">Soda Pop</string>
+    <string name="non_expresso_hot_drinks">Non Espresso Hot Drinks</string>
+    <string name="non_expresso_ice_blended">Non Espresso Ice Blended</string>
+    <string name="expresso_ice_blended">Espresso Ice Blended</string>
+    <string name="dca_signature_iced_coffee">DCA Signature Iced Coffee</string>
+    <string name="slushies">Slushies</string>
+    <string name="home_yogurt_drinks">Home Yogurt Drinks</string>
+    <string name="foods">FOODS</string>
+    <string name="foodstring">FOODS</string>
+    <string name="location">Location</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="email">Email</string>
+    <string name="about">ABOUT</string>
+    <string name="search">Search</string>
+    <string name="fods">FOODS</string>
+    <string name="drinks">DRINKS</string>
+</resources>
