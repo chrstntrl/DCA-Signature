@@ -10,13 +10,15 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="about">ABOUT</string>
     <string name="acc">For more information visit or contact us on our social media accounts.</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
     <string name="adds_on">Adds On</string>
     <string name="all_day_breakfast">All Day Breakfast</string>
-    <string name="all_day_breakfast_title">ALL DAY BREAKFAST</string>
     <string name="angus_beef">Angus Beef</string>
-    <string name="angus_beef_franks">ANGUS BEEF FRANKS</string>
     <string name="apartment_style_pasta">Apartment Style Pasta</string>
     <string name="app_name">DCA Signature</string>
     <string name="appetizers">Appetizers</string>
@@ -47,7 +49,10 @@
     <string name="home_yogurt_drinks">Home Yogurt Drinks</string>
     <string name="iced_tea_influsion">Iced Tea Influsion</string>
     <string name="instagram">Instagram</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_username">Not a valid username</string>
     <string name="location">Location</string>
+    <string name="login_failed">"Login failed"</string>
     <string name="milkshakes">Milkshakes</string>
     <string name="name">Name</string>
     <string name="non_expresso_hot_drinks">Non Espresso Hot Drinks</string>
@@ -60,8 +65,9 @@
     <string name="profpassword">Password</string>
     <string name="profusername">Username</string>
     <string name="project_id" translatable="false">dcas-8250d</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
     <string name="rice_meals">Rice Meals</string>
-    <string name="ricemeals">RICE MEAL</string>
     <string name="salads">Salads</string>
     <string name="sandwiches">Sandwiches</string>
     <string name="sauce_and_dips">Sauce and Dips</string>
@@ -70,8 +76,14 @@
     <string name="sign">DCA Signature is more than just a Cafe - it is a destination that aims to provide a memorable experience to its guests.The cafes about page reflects its commitment to quality, innovation, and customer satisfaction. At DCA Signature , they take pride in their concept dining experience that bridges the gap between traditional and modern flavors. Their menu is carefully crafted to showcase the best of both worlds, creating a unique fusion of tastes that are both familiar and exciting. But DCA Signature is more than just food. It is a place where people can come together, share stories, and create new memories. The Cafes cozy ambiance and warm hospitality create a welcoming atmosphere that makes guests feel at home. Moreover, DCA Signature commitment to quality extends beyond its menu. They are dedicated to using only the freshest and highest-quality ingredients in their dishes, ensuring that every meal is a feast for the senses. Whether you are looking for a place to enjoy a delicious meal, celebrate a special occasion, or just unwind after a long day, DCA Signature is the perfect choice. With its exceptional food, warm ambiance, and friendly service, it is a destination that is sure to leave a lasting impression.</string>
     <string name="slushies">Slushies</string>
     <string name="soda_pop">Soda Pop</string>
+    <string name="title_activity_admin_orders">adminOrders</string>
     <string name="title_name">Name</string>
     <string name="title_username">username</string>
+    <string name="welcome">"Welcome !"</string>
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
         <item name="android:statusBarColor">@color/black</item>

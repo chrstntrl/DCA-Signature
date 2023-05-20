@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         logout = findViewById(R.id.logout);
 
 
+
         food_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

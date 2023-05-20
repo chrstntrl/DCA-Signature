@@ -87,17 +87,29 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 boolean foundUser = false;
+                boolean isAdmin = false;
                 for (DataSnapshot userSnapshot : snapshot.getChildren()) {
                     String username = userSnapshot.child("username").getValue(String.class);
                     if (username.equals(Uusername)) {
                         foundUser = true;
                         String passDB = userSnapshot.child("password").getValue(String.class);
+                        String role = userSnapshot.child("role").getValue(String.class);
 
                         if (passDB.equals(Upassword)) {
                             liusername.setError(null);
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            startActivity(intent);
+                            if (role == null || role.isEmpty()) {
+                                // Open MainActivity
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
+                            } else if (role.equals("admin")) {
+                                // Open AdminPanel activity
+                                Intent intent = new Intent(LoginActivity.this, AdminPanel.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
+                            } else {
+                                // Handle other roles if needed
+                            }
                         } else {
                             lipass.setError("Invalid Credentials");
                             lipass.requestFocus();
@@ -117,6 +129,4 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

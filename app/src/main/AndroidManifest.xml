@@ -18,6 +18,25 @@
             android:name=".angus_beef"
             android:exported="false" />
         <activity
+            android:name=".adminDelete"
+            android:exported="false" />
+        <activity
+            android:name=".adminUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".adminAdd"
+            android:exported="false" />
+        <activity
+            android:name=".adminOrder"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.adminOrders"
+            android:exported="false"
+            android:label="@string/title_activity_admin_orders" />
+        <activity
+            android:name=".AdminPanel"
+            android:exported="false" />
+        <activity
             android:name=".food_sec"
             android:exported="false" />
         <activity

@@ -51,7 +51,13 @@
     <string name="edit_username">Username</string>
     <string name="edit_password">Password</string>
     <string name="save_btn">Save</string>
-    <string name="angus_beef_franks">ANGUS BEEF FRANKS</string>
-    <string name="all_day_breakfast_title">ALL DAY BREAKFAST</string>
-    <string name="ricemeals">RICE MEAL</string>
+    <string name="title_activity_admin_orders">adminOrders</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
