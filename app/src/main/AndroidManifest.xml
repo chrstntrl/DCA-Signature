@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Dca"
         tools:targetApi="31">
         <activity
+            android:name=".rice_meals"
+            android:exported="false" />
+        <activity
+            android:name=".angus_beef"
+            android:exported="false" />
+        <activity
             android:name=".food_sec"
             android:exported="false" />
         <activity
@@ -47,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drawerlayout;
     ImageView menu;
-    LinearLayout home, profile, cart, settings, about, logout, food_sec;
+    LinearLayout home, profile, cart, settings, about, logout, food_sec, angus, rice;
 
 
 
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         food_sec = findViewById(R.id.allday_layout);
+        angus = findViewById(R.id.angus_layout);
+        rice = findViewById(R.id.rice_layout);
 
 
         drawerlayout = findViewById(R.id.drawerLayout);
@@ -46,6 +48,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 redirectActivity(MainActivity.this, food_sec.class);
+            }
+        });
+
+        angus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {redirectActivity(MainActivity.this, angus_beef.class);
+            }
+        });
+
+        rice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redirectActivity(MainActivity.this, rice_meals.class);
             }
         });
 

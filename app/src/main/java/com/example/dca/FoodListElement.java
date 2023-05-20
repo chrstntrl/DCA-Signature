@@ -19,7 +19,8 @@ public class FoodListElement {
     public String desc;
     public String price;
 
-    public FoodListElement(String name, String desc, String price) {
+    public FoodListElement(Drawable pic1, String name, String desc, String price) {
+        this.pic1 = pic1;
         this.name = name;
         this.desc = desc;
         this.price = price;

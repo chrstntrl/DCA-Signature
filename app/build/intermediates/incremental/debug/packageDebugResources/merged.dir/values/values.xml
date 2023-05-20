@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="brown">#190606</color>
+    <color name="grey">#BEBEBE</color>
     <color name="ic_dsa_launcher_background">#1F0D0D</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -13,7 +14,9 @@
     <string name="acc">For more information visit or contact us on our social media accounts.</string>
     <string name="adds_on">Adds On</string>
     <string name="all_day_breakfast">All Day Breakfast</string>
+    <string name="all_day_breakfast_title">ALL DAY BREAKFAST</string>
     <string name="angus_beef">Angus Beef</string>
+    <string name="angus_beef_franks">ANGUS BEEF FRANKS</string>
     <string name="apartment_style_pasta">Apartment Style Pasta</string>
     <string name="app_name">DCA Signature</string>
     <string name="appetizers">Appetizers</string>
@@ -22,6 +25,12 @@
     <string name="dca_signature_iced_coffee">DCA Signature Iced Coffee</string>
     <string name="default_web_client_id" translatable="false">821166714445-pntipm5k3ldtcq7dm62ur1r0o8725l96.apps.googleusercontent.com</string>
     <string name="drinks">DRINKS</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_password">Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_username">Username</string>
+    <string name="editprofile_Btn">Edit Profile</string>
     <string name="email">Email</string>
     <string name="expresso_hot_drinks">Expresso Hot Drinks</string>
     <string name="expresso_ice_blended">Espresso Ice Blended</string>
@@ -40,17 +49,29 @@
     <string name="instagram">Instagram</string>
     <string name="location">Location</string>
     <string name="milkshakes">Milkshakes</string>
+    <string name="name">Name</string>
     <string name="non_expresso_hot_drinks">Non Espresso Hot Drinks</string>
     <string name="non_expresso_ice_blended">Non Espresso Ice Blended</string>
+    <string name="profemail">Email</string>
+    <string name="profileEmail">email</string>
+    <string name="profilePassword">password</string>
+    <string name="profileUsername">username</string>
+    <string name="profilename">name</string>
+    <string name="profpassword">Password</string>
+    <string name="profusername">Username</string>
     <string name="project_id" translatable="false">dcas-8250d</string>
     <string name="rice_meals">Rice Meals</string>
+    <string name="ricemeals">RICE MEAL</string>
     <string name="salads">Salads</string>
     <string name="sandwiches">Sandwiches</string>
     <string name="sauce_and_dips">Sauce and Dips</string>
+    <string name="save_btn">Save</string>
     <string name="search">Search</string>
     <string name="sign">DCA Signature is more than just a Cafe - it is a destination that aims to provide a memorable experience to its guests.The cafes about page reflects its commitment to quality, innovation, and customer satisfaction. At DCA Signature , they take pride in their concept dining experience that bridges the gap between traditional and modern flavors. Their menu is carefully crafted to showcase the best of both worlds, creating a unique fusion of tastes that are both familiar and exciting. But DCA Signature is more than just food. It is a place where people can come together, share stories, and create new memories. The Cafes cozy ambiance and warm hospitality create a welcoming atmosphere that makes guests feel at home. Moreover, DCA Signature commitment to quality extends beyond its menu. They are dedicated to using only the freshest and highest-quality ingredients in their dishes, ensuring that every meal is a feast for the senses. Whether you are looking for a place to enjoy a delicious meal, celebrate a special occasion, or just unwind after a long day, DCA Signature is the perfect choice. With its exceptional food, warm ambiance, and friendly service, it is a destination that is sure to leave a lasting impression.</string>
     <string name="slushies">Slushies</string>
     <string name="soda_pop">Soda Pop</string>
+    <string name="title_name">Name</string>
+    <string name="title_username">username</string>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
         <item name="android:statusBarColor">@color/black</item>

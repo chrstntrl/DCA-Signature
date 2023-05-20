@@ -5,6 +5,7 @@
     android:id="@+id/foodsLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".food_sec">
 
     <TextView
@@ -17,7 +18,7 @@
         android:gravity="center"
         android:minHeight="48dp"
         android:padding="10dp"
-        android:text="FOODS"
+        android:text="@string/all_day_breakfast_title"
         android:textColor="@color/white"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +28,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/foodsRecyclerView"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="671dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
@@ -37,7 +38,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food_sec_title"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:foregroundGravity="center_horizontal"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
