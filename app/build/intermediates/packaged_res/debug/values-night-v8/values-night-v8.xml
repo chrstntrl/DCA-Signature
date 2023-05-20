@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="CardBackground"><item name="android:background">@color/grey</item></style>
+    <style name="ScreenBackground"><item name="android:background">@color/black</item></style>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
         <item name="android:statusBarColor">@color/black</item>
 
     </style>
+    <style name="TextColor"><item name="android:textColor">@color/white</item></style>
     <style name="Theme.Dca" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>

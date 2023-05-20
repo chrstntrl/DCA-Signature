@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
     TextView titleName, titleUsername;
     Button editProfile;
     DrawerLayout drawerlayout;
-    ImageView menu;
+    ImageView menu,order;
     LinearLayout home, profile, cart, settings, about, logout;
 
 
@@ -126,6 +126,14 @@ public class ProfileActivity extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Clear the task stack
                 startActivity(intent); // Start the LoginActivity
                 Toast.makeText(ProfileActivity.this, "Logout successful", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(ProfileActivity.this, orderActivity.class);
             }
         });
 

@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class AboutActivity extends AppCompatActivity {
 
     DrawerLayout drawerlayout;
-    ImageView menu;
+    ImageView menu,order;
     LinearLayout home, profile, cart, settings, about, logout;
 
 
@@ -34,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         settings = findViewById(R.id.settings);
         about = findViewById(R.id.about);
         logout = findViewById(R.id.logout);
-
+        order = findViewById(R.id.order);
 
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +88,13 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
+
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(AboutActivity.this, orderActivity.class);
+            }
+        });
 
 
 

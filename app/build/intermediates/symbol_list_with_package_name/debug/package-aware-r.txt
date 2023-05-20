@@ -1248,6 +1248,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color darkGrey
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2474,10 +2475,12 @@ drawable avd_show_password
 drawable background_splashscreen
 drawable baseline_exit
 drawable baseline_fastfood_24
+drawable baseline_mode_night_24
 drawable baseline_receipt_24
 drawable baseline_search_24
 drawable baseline_shopping_cart_24
 drawable baseline_shopping_cart_checkout_24
+drawable baseline_wb_sunny_24
 drawable bg
 drawable bottom_background
 drawable brown_border
@@ -2606,6 +2609,10 @@ drawable slushy
 drawable soda
 drawable test_custom_background
 drawable test_level_drawable
+drawable th
+drawable thfalse
+drawable thtrue
+drawable tk
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable waffles
@@ -2701,6 +2708,9 @@ id all
 id allStates
 id allday_layout
 id always
+id angusRecyclerView
+id angus_beef_recycler
+id angus_layout
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2734,6 +2744,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnadd
 id buttonPanel
 id bw
 id cache_measures
@@ -2788,6 +2799,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2982,6 +2994,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id order
 id outline
 id outward
 id overshoot
@@ -3001,6 +3014,7 @@ id pic1
 id pin
 id position
 id postLayout
+id price
 id profile
 id profileEmail
 id profileImg
@@ -3013,6 +3027,9 @@ id radio
 id ratio
 id rectangles
 id reverseSawtooth
+id riceRecyclerView
+id rice_layout
+id rice_meal_title
 id right
 id rightToLeft
 id right_icon
@@ -3091,6 +3108,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id sw
+id switchMode
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3261,12 +3279,15 @@ layout activity_admin_delete
 layout activity_admin_order
 layout activity_admin_panel
 layout activity_admin_update
+layout activity_angus_beef
 layout activity_cart
 layout activity_edit_profile
 layout activity_food_sec
 layout activity_login
 layout activity_main
+layout activity_order
 layout activity_profile
+layout activity_rice_meals
 layout activity_settings
 layout activity_signup
 layout activity_splashscreen
@@ -3408,8 +3429,10 @@ string action_sign_in
 string action_sign_in_short
 string adds_on
 string all_day_breakfast
+string all_day_breakfast_title
 string androidx_startup
 string angus_beef
+string angus_beef_franks
 string apartment_style_pasta
 string app_name
 string appbar_scrolling_view_behavior
@@ -3578,6 +3601,7 @@ string project_id
 string prompt_email
 string prompt_password
 string rice_meals
+string ricemeals
 string salads
 string sandwiches
 string sauce_and_dips
@@ -3865,6 +3889,7 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style CardBackground
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -3920,6 +3945,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style ScreenBackground
 style ShapeAppearance_Material3_LargeComponent
 style ShapeAppearance_Material3_MediumComponent
 style ShapeAppearance_Material3_NavigationBarView_ActiveIndicator
@@ -4066,6 +4092,7 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style TextColor
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

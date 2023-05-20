@@ -24,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Dca" >
         <activity
+            android:name="com.example.dca.orderActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.dca.rice_meals"
             android:exported="false" />
         <activity

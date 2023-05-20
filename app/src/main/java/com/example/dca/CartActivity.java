@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class CartActivity extends AppCompatActivity {
     DrawerLayout drawerlayout;
-    ImageView menu;
+    ImageView menu,order;
     LinearLayout home, profile, cart, settings, about, logout;
 
 
@@ -33,7 +33,7 @@ public class CartActivity extends AppCompatActivity {
         settings = findViewById(R.id.settings);
         about = findViewById(R.id.about);
         logout = findViewById(R.id.logout);
-
+        order = findViewById(R.id.order);
 
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +88,12 @@ public class CartActivity extends AppCompatActivity {
         });
 
 
-
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(CartActivity.this, orderActivity.class);
+            }
+        });
 
 
     }

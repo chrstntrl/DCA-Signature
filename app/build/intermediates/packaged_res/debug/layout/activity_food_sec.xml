@@ -5,7 +5,7 @@
     android:id="@+id/foodsLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    style="@style/ScreenBackground"
     tools:context=".food_sec">
 
     <TextView
@@ -30,7 +30,7 @@
         android:id="@+id/foodsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="671dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
