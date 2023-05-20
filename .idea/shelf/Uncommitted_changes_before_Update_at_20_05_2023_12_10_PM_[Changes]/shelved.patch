@@ -1,0 +1,1809 @@
+Index: app/src/main/res/layout/activity_about.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/drawerLayout\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"#FFFFFF\"\r\n    tools:context=\".AboutActivity\">\r\n\r\n    <ScrollView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\">\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\">\r\n\r\n            <include layout=\"@layout/toolbox\" />\r\n\r\n            <ImageView\r\n                android:id=\"@+id/dca\"\r\n                android:layout_width=\"360dp\"\r\n                android:layout_height=\"234dp\"\r\n                android:layout_marginEnd=\"18dp\"\r\n                android:padding=\"8dp\"\r\n                android:src=\"@drawable/dcas\"\r\n                tools:ignore=\"ContentDescription\" />\r\n\r\n            <TextView\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:text=\"@string/about\"\r\n                android:gravity=\"center\"\r\n                android:textColor=\"@color/black\"\r\n                android:background=\"#7C190606\"\r\n                android:textSize=\"24sp\" />\r\n\r\n            <TextView\r\n                android:layout_width=\"340dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"18dp\"\r\n                android:layout_marginTop=\"10dp\"\r\n                android:layout_marginEnd=\"18dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/sign\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"14sp\" />\r\n\r\n            <TextView\r\n                android:layout_width=\"360dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"18dp\"\r\n                android:layout_marginEnd=\"18dp\"\r\n                android:layout_marginTop=\"10dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/acc\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"12sp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/facebook\"\r\n                android:layout_width=\"150dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"18dp\"\r\n                android:layout_marginTop=\"10dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/facebook\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"12sp\"\r\n                app:drawableLeftCompat=\"@mipmap/ic_fb\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/instagram\"\r\n                android:layout_width=\"150dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"180dp\"\r\n                android:layout_marginTop=\"-65dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/instagram\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"12sp\"\r\n                app:drawableStartCompat=\"@mipmap/ic_instagram\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email\"\r\n                android:layout_width=\"150dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"18dp\"\r\n                android:layout_marginTop=\"10dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/email\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"12sp\"\r\n                app:drawableLeftCompat=\"@mipmap/ic_email\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/location\"\r\n                android:layout_width=\"150dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"180dp\"\r\n                android:layout_marginTop=\"-65dp\"\r\n                android:fontFamily=\"@font/pop\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"8dp\"\r\n                android:text=\"@string/location\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"12sp\"\r\n                app:drawableLeftCompat=\"@mipmap/ic_location\" />\r\n\r\n        </LinearLayout>\r\n    </ScrollView>\r\n\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"300dp\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        tools:ignore=\"VisualLintBounds\">\r\n\r\n        <include layout=\"@layout/nav_drawer\" />\r\n    </RelativeLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_about.xml b/app/src/main/res/layout/activity_about.xml
+--- a/app/src/main/res/layout/activity_about.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/layout/activity_about.xml	(date 1684508919894)
+@@ -3,9 +3,9 @@
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/drawerLayout"
++    style="@style/ScreenBackground"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:background="#FFFFFF"
+     tools:context=".AboutActivity">
+ 
+     <ScrollView
+@@ -25,20 +25,20 @@
+                 android:layout_height="234dp"
+                 android:layout_marginEnd="18dp"
+                 android:padding="8dp"
+-                android:src="@drawable/dcas"
+-                tools:ignore="ContentDescription" />
++                android:src="@drawable/dcas" />
+ 
+             <TextView
++                style="@style/TextColor"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
++                android:background="#3B190606"
+                 android:fontFamily="@font/pop"
+-                android:text="@string/about"
+                 android:gravity="center"
+-                android:textColor="@color/black"
+-                android:background="#7C190606"
++                android:text="@string/about"
+                 android:textSize="24sp" />
+ 
+             <TextView
++                style="@style/TextColor"
+                 android:layout_width="340dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="18dp"
+@@ -47,23 +47,23 @@
+                 android:fontFamily="@font/pop"
+                 android:padding="8dp"
+                 android:text="@string/sign"
+-                android:textColor="@color/black"
+                 android:textSize="14sp" />
+ 
+             <TextView
++                style="@style/TextColor"
+                 android:layout_width="360dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="18dp"
+-                android:layout_marginEnd="18dp"
+                 android:layout_marginTop="10dp"
++                android:layout_marginEnd="18dp"
+                 android:fontFamily="@font/pop"
+                 android:padding="8dp"
+                 android:text="@string/acc"
+-                android:textColor="@color/black"
+                 android:textSize="12sp" />
+ 
+             <TextView
+                 android:id="@+id/facebook"
++                style="@style/TextColor"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="18dp"
+@@ -72,12 +72,12 @@
+                 android:gravity="center"
+                 android:padding="8dp"
+                 android:text="@string/facebook"
+-                android:textColor="@color/black"
+                 android:textSize="12sp"
+                 app:drawableLeftCompat="@mipmap/ic_fb" />
+ 
+             <TextView
+                 android:id="@+id/instagram"
++                style="@style/TextColor"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="180dp"
+@@ -86,12 +86,12 @@
+                 android:gravity="center"
+                 android:padding="8dp"
+                 android:text="@string/instagram"
+-                android:textColor="@color/black"
+                 android:textSize="12sp"
+                 app:drawableStartCompat="@mipmap/ic_instagram" />
+ 
+             <TextView
+                 android:id="@+id/email"
++                style="@style/TextColor"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="18dp"
+@@ -100,12 +100,12 @@
+                 android:gravity="center"
+                 android:padding="8dp"
+                 android:text="@string/email"
+-                android:textColor="@color/black"
+                 android:textSize="12sp"
+                 app:drawableLeftCompat="@mipmap/ic_email" />
+ 
+             <TextView
+                 android:id="@+id/location"
++                style="@style/TextColor"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="180dp"
+@@ -114,7 +114,6 @@
+                 android:gravity="center"
+                 android:padding="8dp"
+                 android:text="@string/location"
+-                android:textColor="@color/black"
+                 android:textSize="12sp"
+                 app:drawableLeftCompat="@mipmap/ic_location" />
+ 
+@@ -125,8 +124,7 @@
+     <RelativeLayout
+         android:layout_width="300dp"
+         android:layout_height="match_parent"
+-        android:layout_gravity="start"
+-        tools:ignore="VisualLintBounds">
++        android:layout_gravity="start">
+ 
+         <include layout="@layout/nav_drawer" />
+     </RelativeLayout>
+Index: app/src/main/res/drawable/tk.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/tk.xml b/app/src/main/res/drawable/tk.xml
+new file mode 100644
+--- /dev/null	(date 1683647607632)
++++ b/app/src/main/res/drawable/tk.xml	(date 1683647607632)
+@@ -0,0 +1,28 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++    <item
++        android:state_checked="true">
++        <shape
++            android:shape="rectangle">
++            <solid
++                android:color="@color/darkGrey"/>
++            <size
++                android:height="4dp"/>
++            <corners
++                android:radius="100dp"/>
++        </shape>
++    </item>
++
++    <item
++        android:state_checked="false">
++        <shape
++            android:shape="rectangle">
++            <solid
++                android:color="#FEB600"/>
++            <size
++                android:height="4dp"/>
++            <corners
++                android:radius="100dp"/>
++        </shape>
++    </item>
++</selector>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_admin_orders.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_admin_orders.xml b/app/src/main/res/layout/activity_admin_orders.xml
+new file mode 100644
+--- /dev/null	(date 1684544892200)
++++ b/app/src/main/res/layout/activity_admin_orders.xml	(date 1684544892200)
+@@ -0,0 +1,40 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    tools:context=".MainActivity">
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="ADMIN PANEL ORDERS"
++        android:background="@color/brown"
++        android:textSize="24sp"
++        android:id="@+id/txth"
++        android:gravity="center"
++        android:fontFamily="@font/pop"
++        android:padding="8dp"
++
++        android:textColor="@color/white"/>
++
++    <com.google.android.material.bottomnavigation.BottomNavigationView
++        android:id="@+id/bottomNavigation"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_alignParentBottom="true"
++        android:layout_marginEnd="20dp"
++        android:layout_marginStart="20dp"
++        android:layout_marginBottom="30dp"
++        android:layout_marginTop="30dp"
++        android:background="@drawable/bottom_background"
++        android:elevation="2dp"
++        app:itemIconSize="30dp"
++        app:itemIconTint="@drawable/item_selector"
++        app:itemRippleColor="@android:color/transparent"
++        app:labelVisibilityMode="unlabeled"
++        app:menu="@menu/bottom_menu" />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/adminOrders.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/adminOrders.java b/app/src/main/java/com/example/dca/adminOrders.java
+new file mode 100644
+--- /dev/null	(date 1684544527209)
++++ b/app/src/main/java/com/example/dca/adminOrders.java	(date 1684544527209)
+@@ -0,0 +1,47 @@
++package com.example.dca;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.ImageButton;
++import android.widget.Toast;
++
++import com.google.android.material.bottomnavigation.BottomNavigationView;
++import com.google.firebase.auth.FirebaseAuth;
++
++public class adminOrders extends AppCompatActivity {
++
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_admin_orders);
++        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
++        bottomNavigationView.setSelectedItemId(R.id.bottom_orders);
++
++
++        bottomNavigationView.setOnItemSelectedListener(item -> {
++            switch (item.getItemId()) {
++                case R.id.bottom_orders:
++                    return true;
++                case R.id.bottom_home:
++                    startActivity(new Intent(getApplicationContext(), AdminPanel.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.bottom_products:
++                    startActivity(new Intent(getApplicationContext(), adminProducts.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.logout:
++                    startActivity(new Intent(getApplicationContext(), LoginActivity.class));
++                    finish();
++                    return true;
++            }
++            return false;
++        });
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/product.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/product.java b/app/src/main/java/com/example/dca/product.java
+new file mode 100644
+--- /dev/null	(date 1684551859834)
++++ b/app/src/main/java/com/example/dca/product.java	(date 1684551859834)
+@@ -0,0 +1,31 @@
++package com.example.dca;
++
++import com.google.firebase.database.IgnoreExtraProperties;
++
++@IgnoreExtraProperties
++public class product {
++
++    private String edtname;
++    private String edtdescription;
++    private String edtprice;
++
++
++
++    public product(String edtname, String edtdescription, String edtprice, String imageUrl) {
++        this.edtname = edtname;
++        this.edtdescription = edtdescription;
++        this.edtprice = edtprice;
++    }
++
++    public String getEdtname() {
++        return edtname;
++    }
++
++    public String getEdtdescription() {
++        return edtdescription;
++    }
++
++    public String getEdtprice() {
++        return edtprice;
++    }
++}
+Index: app/src/main/res/drawable/baseline_home_24.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_home_24.xml b/app/src/main/res/drawable/baseline_home_24.xml
+new file mode 100644
+--- /dev/null	(date 1684533085405)
++++ b/app/src/main/res/drawable/baseline_home_24.xml	(date 1684533085405)
+@@ -0,0 +1,5 @@
++<vector android:height="24dp" android:tint="#000000"
++    android:viewportHeight="24" android:viewportWidth="24"
++    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M10,20v-6h4v6h5v-8h3L12,3 2,12h3v8z"/>
++</vector>
+Index: app/src/main/res/drawable/th.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/th.xml b/app/src/main/res/drawable/th.xml
+new file mode 100644
+--- /dev/null	(date 1683639350066)
++++ b/app/src/main/res/drawable/th.xml	(date 1683639350066)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item
++        android:state_checked="true"
++        android:drawable="@drawable/thtrue"/>
++    <item
++        android:state_checked="false"
++        android:drawable="@drawable/thfalse"/>
++
++</selector>
+\ No newline at end of file
+Index: app/src/main/res/drawable/baseline_products_24.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_products_24.xml b/app/src/main/res/drawable/baseline_products_24.xml
+new file mode 100644
+--- /dev/null	(date 1684533146986)
++++ b/app/src/main/res/drawable/baseline_products_24.xml	(date 1684533146986)
+@@ -0,0 +1,5 @@
++<vector android:height="24dp" android:tint="#000000"
++    android:viewportHeight="24" android:viewportWidth="24"
++    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M18.06,22.99h1.66c0.84,0 1.53,-0.64 1.63,-1.46L23,5.05h-5L18,1h-1.97v4.05h-4.97l0.3,2.34c1.71,0.47 3.31,1.32 4.27,2.26 1.44,1.42 2.43,2.89 2.43,5.29v8.05zM1,21.99L1,21h15.03v0.99c0,0.55 -0.45,1 -1.01,1L2.01,22.99c-0.56,0 -1.01,-0.45 -1.01,-1zM16.03,14.99c0,-8 -15.03,-8 -15.03,0h15.03zM1.02,17h15v2h-15z"/>
++</vector>
+Index: app/src/main/res/drawable/baseline_shopping_cart.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_shopping_cart.xml b/app/src/main/res/drawable/baseline_shopping_cart.xml
+new file mode 100644
+--- /dev/null	(date 1684533367586)
++++ b/app/src/main/res/drawable/baseline_shopping_cart.xml	(date 1684533367586)
+@@ -0,0 +1,5 @@
++<vector android:height="24dp" android:tint="#000000"
++    android:viewportHeight="24" android:viewportWidth="24"
++    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M7,18c-1.1,0 -1.99,0.9 -1.99,2S5.9,22 7,22s2,-0.9 2,-2 -0.9,-2 -2,-2zM1,2v2h2l3.6,7.59 -1.35,2.45c-0.16,0.28 -0.25,0.61 -0.25,0.96 0,1.1 0.9,2 2,2h12v-2L7.42,15c-0.14,0 -0.25,-0.11 -0.25,-0.25l0.03,-0.12 0.9,-1.63h7.45c0.75,0 1.41,-0.41 1.75,-1.03l3.58,-6.49c0.08,-0.14 0.12,-0.31 0.12,-0.48 0,-0.55 -0.45,-1 -1,-1L5.21,4l-0.94,-2L1,2zM17,18c-1.1,0 -1.99,0.9 -1.99,2s0.89,2 1.99,2 2,-0.9 2,-2 -0.9,-2 -2,-2z"/>
++</vector>
+Index: app/src/main/res/drawable/thfalse.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/thfalse.xml b/app/src/main/res/drawable/thfalse.xml
+new file mode 100644
+--- /dev/null	(date 1683647592098)
++++ b/app/src/main/res/drawable/thfalse.xml	(date 1683647592098)
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item>
++        <shape
++            android:shape="oval">
++            <solid
++                android:color="@color/white"/>
++            <size
++                android:height="4dp"
++                android:width="4dp"/>
++            <stroke
++                android:width="1dp"
++                android:color="#FEB600"
++                />
++
++        </shape>
++    </item>
++    <item
++        android:drawable="@drawable/baseline_wb_sunny_24"
++        android:top="4dp"
++        android:bottom="4dp"
++        android:left="4dp"
++        android:right="4dp"/>
++</layer-list>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/LoginActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.dca;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.TextView;\r\n\r\nimport com.google.firebase.database.DataSnapshot;\r\nimport com.google.firebase.database.DatabaseError;\r\nimport com.google.firebase.database.DatabaseReference;\r\nimport com.google.firebase.database.FirebaseDatabase;\r\nimport com.google.firebase.database.Query;\r\nimport com.google.firebase.database.ValueEventListener;\r\n\r\npublic class LoginActivity extends AppCompatActivity {\r\n\r\n    EditText liusername, lipass;\r\n    TextView lisignup;\r\n    Button libutton;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_login);\r\n\r\n        liusername = findViewById(R.id.li_username);\r\n        lipass = findViewById(R.id.li_pass);\r\n        lisignup = findViewById(R.id.li_signup);\r\n        libutton = findViewById(R.id.li_button);\r\n\r\n\r\n        libutton.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                if (!validateUsername() || !validatePassword()) {\r\n                    return;\r\n                }\r\n                checkUser();\r\n            }\r\n        });\r\n\r\n        lisignup.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);\r\n                startActivity(intent);\r\n            }\r\n        });\r\n    }\r\n\r\n    public Boolean validateUsername() {\r\n        String val = liusername.getText().toString();\r\n        if (val.isEmpty()) {\r\n            liusername.setError(\"Please input your username.\");\r\n            return false;\r\n        } else {\r\n            liusername.setError(null);\r\n            return true;\r\n        }\r\n    }\r\n\r\n    public Boolean validatePassword() {\r\n        String val = lipass.getText().toString();\r\n        if (val.isEmpty()) {\r\n            lipass.setError(\"Please input your password.\");\r\n            return false;\r\n        } else {\r\n            lipass.setError(null);\r\n            return true;\r\n        }\r\n    }\r\n\r\n    public void checkUser() {\r\n        String Uusername = liusername.getText().toString().trim();\r\n        String Upassword = lipass.getText().toString().trim();\r\n\r\n        DatabaseReference reference = FirebaseDatabase.getInstance().getReference(\"users\");\r\n        Query checkUserDatabase = reference.orderByChild(\"username\").equalTo(Uusername);\r\n\r\n        checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {\r\n\r\n            @Override\r\n            public void onDataChange(@NonNull DataSnapshot snapshot) {\r\n                boolean foundUser = false;\r\n                for (DataSnapshot userSnapshot : snapshot.getChildren()) {\r\n                    String username = userSnapshot.child(\"username\").getValue(String.class);\r\n                    if (username.equals(Uusername)) {\r\n                        foundUser = true;\r\n                        String passDB = userSnapshot.child(\"password\").getValue(String.class);\r\n\r\n                        if (passDB.equals(Upassword)) {\r\n                            liusername.setError(null);\r\n                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);\r\n                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);\r\n                            startActivity(intent);\r\n                        } else {\r\n                            lipass.setError(\"Invalid Credentials\");\r\n                            lipass.requestFocus();\r\n                        }\r\n                        break;\r\n                    }\r\n                }\r\n                if (!foundUser) {\r\n                    liusername.setError(\"Username doesn't exist\");\r\n                    liusername.requestFocus();\r\n                }\r\n            }\r\n\r\n            @Override\r\n            public void onCancelled(@NonNull DatabaseError error) {\r\n                // Handle error\r\n            }\r\n        });\r\n    }\r\n\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/LoginActivity.java b/app/src/main/java/com/example/dca/LoginActivity.java
+--- a/app/src/main/java/com/example/dca/LoginActivity.java	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/java/com/example/dca/LoginActivity.java	(date 1684507399086)
+@@ -83,19 +83,29 @@
+         Query checkUserDatabase = reference.orderByChild("username").equalTo(Uusername);
+ 
+         checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+-
+             @Override
+             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                 boolean foundUser = false;
++                boolean isAdmin = false; // New variable to check if user is an admin
++
+                 for (DataSnapshot userSnapshot : snapshot.getChildren()) {
+                     String username = userSnapshot.child("username").getValue(String.class);
++
+                     if (username.equals(Uusername)) {
+                         foundUser = true;
+                         String passDB = userSnapshot.child("password").getValue(String.class);
++                        String role = userSnapshot.child("role").getValue(String.class); // Get the user's role
+ 
+                         if (passDB.equals(Upassword)) {
+                             liusername.setError(null);
+-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
++                            Intent intent;
++                            if (role != null && role.equals("admin")) {// Check if the user is an admin
++                                // Open admin panel
++                                intent = new Intent(LoginActivity.this, AdminPanel.class);
++                            } else {
++                                // Open main activity
++                                intent = new Intent(LoginActivity.this, MainActivity.class);
++                            }
+                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                             startActivity(intent);
+                         } else {
+@@ -105,6 +115,7 @@
+                         break;
+                     }
+                 }
++
+                 if (!foundUser) {
+                     liusername.setError("Username doesn't exist");
+                     liusername.requestFocus();
+Index: app/src/main/res/drawable/thtrue.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/thtrue.xml b/app/src/main/res/drawable/thtrue.xml
+new file mode 100644
+--- /dev/null	(date 1683647563851)
++++ b/app/src/main/res/drawable/thtrue.xml	(date 1683647563851)
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item>
++        <shape
++            android:shape="oval">
++            <solid
++                android:color="@color/white"/>
++            <size
++                android:height="4dp"
++                android:width="4dp"/>
++            <stroke
++                android:width="1dp"
++                android:color="@color/darkGrey"
++                />
++
++        </shape>
++    </item>
++    <item
++        android:drawable="@drawable/baseline_mode_night_24"
++        android:top="4dp"
++        android:bottom="4dp"
++        android:left="4dp"
++        android:right="4dp"/>
++</layer-list>
+\ No newline at end of file
+Index: app/src/main/res/drawable/baseline_customers.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_customers.xml b/app/src/main/res/drawable/baseline_customers.xml
+new file mode 100644
+--- /dev/null	(date 1684533656314)
++++ b/app/src/main/res/drawable/baseline_customers.xml	(date 1684533656314)
+@@ -0,0 +1,5 @@
++<vector android:height="24dp" android:tint="#000000"
++    android:viewportHeight="24" android:viewportWidth="24"
++    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M12,12c2.21,0 4,-1.79 4,-4s-1.79,-4 -4,-4 -4,1.79 -4,4 1.79,4 4,4zM12,14c-2.67,0 -8,1.34 -8,4v2h16v-2c0,-2.66 -5.33,-4 -8,-4z"/>
++</vector>
+Index: app/src/main/res/drawable/item_selector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/item_selector.xml b/app/src/main/res/drawable/item_selector.xml
+new file mode 100644
+--- /dev/null	(date 1684006048054)
++++ b/app/src/main/res/drawable/item_selector.xml	(date 1684006048054)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++    <item
++        android:state_selected="true"
++        android:color="@color/white"/>
++    <item
++        android:state_selected="false"
++        android:color="@color/grey"/>
++</selector>
+\ No newline at end of file
+Index: app/src/main/res/drawable/bottom_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/bottom_background.xml b/app/src/main/res/drawable/bottom_background.xml
+new file mode 100644
+--- /dev/null	(date 1684534049514)
++++ b/app/src/main/res/drawable/bottom_background.xml	(date 1684534049514)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++
++    <solid android:color="#190202"/>
++    <corners
++        android:radius="30dp"/>
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_cart.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/drawerLayout\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <include layout=\"@layout/toolbox\" />\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_gravity=\"center\"\r\n            android:layout_marginTop=\"400dp\"\r\n            android:fontFamily=\"@font/pop\"\r\n            android:text=\"Cart\"\r\n            android:textColor=\"@color/black\"\r\n            android:textSize=\"36sp\" />\r\n\r\n    </LinearLayout>\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"300dp\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\">\r\n\r\n        <include layout=\"@layout/nav_drawer\" />\r\n    </RelativeLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_cart.xml b/app/src/main/res/layout/activity_cart.xml
+--- a/app/src/main/res/layout/activity_cart.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/layout/activity_cart.xml	(date 1684508919900)
+@@ -5,6 +5,7 @@
+     android:id="@+id/drawerLayout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    style="@style/ScreenBackground"
+     tools:context=".MainActivity">
+ 
+     <LinearLayout
+Index: app/src/main/java/com/example/dca/SettingsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.dca;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.core.view.GravityCompat;\r\nimport androidx.drawerlayout.widget.DrawerLayout;\r\n\r\nimport android.app.Activity;\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.ImageView;\r\nimport android.widget.LinearLayout;\r\nimport android.widget.Toast;\r\n\r\nimport com.google.firebase.auth.FirebaseAuth;\r\n\r\npublic class SettingsActivity extends AppCompatActivity {\r\n    DrawerLayout drawerlayout;\r\n    ImageView menu;\r\n    LinearLayout home, profile, cart, settings, about, logout;\r\n\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_settings);\r\n\r\n        drawerlayout = findViewById(R.id.drawerLayout);\r\n        menu = findViewById(R.id.menu);\r\n        home = findViewById(R.id.home);\r\n        profile = findViewById(R.id.profile);\r\n        cart = findViewById(R.id.cart);\r\n        settings = findViewById(R.id.settings);\r\n        about = findViewById(R.id.about);\r\n        logout = findViewById(R.id.logout);\r\n\r\n\r\n        menu.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                openDrawer(drawerlayout);\r\n            }\r\n        });\r\n\r\n        settings.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                recreate();\r\n            }\r\n        });\r\n\r\n        home.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                redirectActivity(SettingsActivity.this, MainActivity.class);\r\n            }\r\n        });\r\n\r\n        profile.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                redirectActivity(SettingsActivity.this, ProfileActivity.class);\r\n            }\r\n        });\r\n\r\n        cart.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                redirectActivity(SettingsActivity.this, CartActivity.class);\r\n            }\r\n        });\r\n\r\n        about.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                redirectActivity(SettingsActivity.this, AboutActivity.class);\r\n            }\r\n        });\r\n        logout.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                FirebaseAuth.getInstance().signOut(); // Sign out the user from Firebase Authentication\r\n                Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);\r\n                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Clear the task stack\r\n                startActivity(intent); // Start the LoginActivity\r\n                Toast.makeText(SettingsActivity.this, \"Logout successful\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        });\r\n\r\n\r\n\r\n\r\n\r\n    }\r\n\r\n    public static void openDrawer(DrawerLayout drawerLayout){\r\n        drawerLayout.openDrawer(GravityCompat.START);\r\n    }\r\n    public static void closeDrawer(DrawerLayout drawerLayout){\r\n        if (drawerLayout.isDrawerOpen(GravityCompat.START)){\r\n            drawerLayout.closeDrawer(GravityCompat.START);\r\n        }\r\n    }\r\n    public static void redirectActivity(Activity activity, Class secondActivity){\r\n        Intent intent = new Intent(activity, secondActivity);\r\n        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\r\n        activity.startActivity(intent);\r\n        activity.finish();\r\n    }\r\n    @Override\r\n    protected void onPause(){\r\n        super.onPause();\r\n        closeDrawer(drawerlayout);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/SettingsActivity.java b/app/src/main/java/com/example/dca/SettingsActivity.java
+--- a/app/src/main/java/com/example/dca/SettingsActivity.java	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/java/com/example/dca/SettingsActivity.java	(date 1684508689994)
+@@ -1,17 +1,20 @@
+ package com.example.dca;
+ 
+-import androidx.appcompat.app.AppCompatActivity;
+-import androidx.core.view.GravityCompat;
+-import androidx.drawerlayout.widget.DrawerLayout;
+-
+ import android.app.Activity;
++import android.content.Context;
+ import android.content.Intent;
++import android.content.SharedPreferences;
+ import android.os.Bundle;
+-import android.view.View;
+ import android.widget.ImageView;
+ import android.widget.LinearLayout;
+ import android.widget.Toast;
+ 
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.appcompat.app.AppCompatDelegate;
++import androidx.appcompat.widget.SwitchCompat;
++import androidx.core.view.GravityCompat;
++import androidx.drawerlayout.widget.DrawerLayout;
++
+ import com.google.firebase.auth.FirebaseAuth;
+ 
+ public class SettingsActivity extends AppCompatActivity {
+@@ -19,12 +22,19 @@
+     ImageView menu;
+     LinearLayout home, profile, cart, settings, about, logout;
+ 
++    SwitchCompat switchMode;
++    Boolean nightMode;
++    SharedPreferences sharedPreferences;
++    SharedPreferences.Editor editor;
++
++
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_settings);
+ 
++
+         drawerlayout = findViewById(R.id.drawerLayout);
+         menu = findViewById(R.id.menu);
+         home = findViewById(R.id.home);
+@@ -35,62 +45,47 @@
+         logout = findViewById(R.id.logout);
+ 
+ 
+-        menu.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                openDrawer(drawerlayout);
+-            }
+-        });
++        menu.setOnClickListener(v -> openDrawer(drawerlayout));
+ 
+-        settings.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                recreate();
+-            }
+-        });
++        settings.setOnClickListener(v -> recreate());
+ 
+-        home.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                redirectActivity(SettingsActivity.this, MainActivity.class);
+-            }
+-        });
++        home.setOnClickListener(v -> redirectActivity(SettingsActivity.this, MainActivity.class));
+ 
+-        profile.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                redirectActivity(SettingsActivity.this, ProfileActivity.class);
+-            }
+-        });
++        profile.setOnClickListener(v -> redirectActivity(SettingsActivity.this, ProfileActivity.class));
+ 
+-        cart.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                redirectActivity(SettingsActivity.this, CartActivity.class);
+-            }
+-        });
++        cart.setOnClickListener(v -> redirectActivity(SettingsActivity.this, CartActivity.class));
+ 
+-        about.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                redirectActivity(SettingsActivity.this, AboutActivity.class);
+-            }
+-        });
+-        logout.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View v) {
+-                FirebaseAuth.getInstance().signOut(); // Sign out the user from Firebase Authentication
+-                Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);
+-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Clear the task stack
+-                startActivity(intent); // Start the LoginActivity
+-                Toast.makeText(SettingsActivity.this, "Logout successful", Toast.LENGTH_SHORT).show();
+-            }
++        about.setOnClickListener(v -> redirectActivity(SettingsActivity.this, AboutActivity.class));
++        logout.setOnClickListener(v -> {
++            FirebaseAuth.getInstance().signOut(); // Sign out the user from Firebase Authentication
++            Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);
++            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Clear the task stack
++            startActivity(intent); // Start the LoginActivity
++            Toast.makeText(SettingsActivity.this, "Logout successful", Toast.LENGTH_SHORT).show();
+         });
+ 
+ 
++        switchMode = findViewById(R.id.switchMode);
+ 
++        sharedPreferences = getSharedPreferences("MODE",Context.MODE_PRIVATE);
++        nightMode = sharedPreferences.getBoolean("nightMode",false);
+ 
+-
++        if (nightMode){
++            switchMode.setChecked(true);
++            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
++        }
++        switchMode.setOnClickListener(v -> {
++            if(nightMode){
++                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
++                editor = sharedPreferences.edit();
++                editor.putBoolean("nightMode",false);
++            } else {
++                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
++                editor = sharedPreferences.edit();
++                editor.putBoolean("nightMode",true);
++            }
++            editor.apply();
++        });
+     }
+ 
+     public static void openDrawer(DrawerLayout drawerLayout){
+Index: app/src/main/res/layout/activity_admin_products.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_admin_products.xml b/app/src/main/res/layout/activity_admin_products.xml
+new file mode 100644
+--- /dev/null	(date 1684545521246)
++++ b/app/src/main/res/layout/activity_admin_products.xml	(date 1684545521246)
+@@ -0,0 +1,168 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    tools:context=".MainActivity">
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="ADMIN PANEL PRODUCTS"
++        android:background="@color/brown"
++        android:textSize="24sp"
++        android:id="@+id/txth"
++        android:gravity="center"
++        android:fontFamily="@font/pop"
++        android:padding="8dp"
++
++        android:textColor="@color/white"/>
++
++
++    <GridLayout
++        android:layout_below="@+id/txth"
++        android:layout_above="@+id/bottomNavigation"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_alignParentEnd="true"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="0dp"
++        android:columnCount="2"
++        android:rowCount="6">
++
++    <androidx.cardview.widget.CardView
++        android:id="@+id/ald"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="1"
++        android:layout_rowWeight="1"
++        android:layout_column="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp"
++        android:onClick="onCardViewClicked1">
++
++        <LinearLayout
++            android:id="@+id/allday_layout"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical"
++            tools:ignore="UseCompoundDrawables">
++
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/pop"
++                android:text="ADD PRODUCT"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++    </androidx.cardview.widget.CardView>
++
++    <androidx.cardview.widget.CardView
++        android:id="@+id/Rm"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="2"
++        android:layout_rowWeight="1"
++        android:layout_column="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        android:onClick="onCardViewClicked2"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical"
++            tools:ignore="UseCompoundDrawables">
++
++
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:fontFamily="@font/pop"
++                android:text="UPDATE PRODUCT"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++    </androidx.cardview.widget.CardView>
++
++        <androidx.cardview.widget.CardView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_row="3"
++            android:layout_rowWeight="1"
++            android:layout_column="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_margin="8dp"
++            app:cardCornerRadius="8dp"
++            app:cardElevation="8dp"
++            android:onClick="onCardViewClicked3">
++
++
++            <LinearLayout
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical|center_horizontal"
++                android:gravity="center"
++                android:orientation="vertical"
++                tools:ignore="UseCompoundDrawables">
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:fontFamily="@font/pop"
++                    android:text="DELETE PRODUCT"
++                    android:textColor="@color/black"
++                    android:textSize="20sp" />
++
++            </LinearLayout>
++
++        </androidx.cardview.widget.CardView>
++
++    </GridLayout>
++
++
++    <com.google.android.material.bottomnavigation.BottomNavigationView
++        android:id="@+id/bottomNavigation"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_alignParentBottom="true"
++        android:layout_marginEnd="20dp"
++        android:layout_marginStart="20dp"
++        android:layout_marginBottom="30dp"
++        android:layout_marginTop="30dp"
++        android:background="@drawable/bottom_background"
++        android:elevation="2dp"
++        app:itemIconSize="30dp"
++        app:itemIconTint="@drawable/item_selector"
++        app:itemRippleColor="@android:color/transparent"
++        app:labelVisibilityMode="unlabeled"
++        app:menu="@menu/bottom_menu" />
++
++
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/adminProducts.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/adminProducts.java b/app/src/main/java/com/example/dca/adminProducts.java
+new file mode 100644
+--- /dev/null	(date 1684545346454)
++++ b/app/src/main/java/com/example/dca/adminProducts.java	(date 1684545346454)
+@@ -0,0 +1,61 @@
++package com.example.dca;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.ImageButton;
++import android.widget.Toast;
++
++import com.google.android.material.bottomnavigation.BottomNavigationView;
++import com.google.firebase.auth.FirebaseAuth;
++
++public class adminProducts extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_admin_products);
++        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
++        bottomNavigationView.setSelectedItemId(R.id.bottom_products);
++
++        bottomNavigationView.setOnItemSelectedListener(item -> {
++            switch (item.getItemId()) {
++                case R.id.bottom_products:
++                    return true;
++                case R.id.bottom_home:
++                    startActivity(new Intent(getApplicationContext(), AdminPanel.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.bottom_orders:
++                    startActivity(new Intent(getApplicationContext(), adminOrders.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.logout:
++                    startActivity(new Intent(getApplicationContext(), LoginActivity.class));
++                    finish();
++                    return true;
++            }
++            return false;
++        });
++    }
++
++    public void onCardViewClicked1(View view) {
++        Intent intent = new Intent(this, addProduct.class);
++        startActivity(intent);
++    }
++
++    public void onCardViewClicked2(View view) {
++        Intent intent = new Intent(this, updateProduct.class);
++        startActivity(intent);
++    }
++
++    public void onCardViewClicked3(View view) {
++        Intent intent = new Intent(this, deleteProduct.class);
++        startActivity(intent);
++    }
++
++}
+Index: app/src/main/res/layout/activity_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:id=\"@+id/drawerLayout\"\r\n    tools:context=\".SettingsActivity\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <include\r\n            layout=\"@layout/toolbox\"/>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:fontFamily=\"@font/pop\"\r\n            android:text=\"Settings\"\r\n            android:layout_marginTop=\"400dp\"\r\n            android:layout_gravity=\"center\"\r\n            android:textSize=\"36sp\"\r\n            android:textColor=\"@color/black\"\r\n            />\r\n\r\n    </LinearLayout>\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"300dp\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\">\r\n        <include\r\n            layout=\"@layout/nav_drawer\"/>\r\n    </RelativeLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_settings.xml b/app/src/main/res/layout/activity_settings.xml
+--- a/app/src/main/res/layout/activity_settings.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/layout/activity_settings.xml	(date 1684508689963)
+@@ -2,9 +2,10 @@
+ <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/drawerLayout"
++    style="@style/ScreenBackground"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:id="@+id/drawerLayout"
+     tools:context=".SettingsActivity">
+ 
+     <LinearLayout
+@@ -12,19 +13,60 @@
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+ 
+-        <include
+-            layout="@layout/toolbox"/>
++        <include layout="@layout/toolbox" />
+ 
+         <TextView
++            style="@style/TextColor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
++            android:layout_margin="8dp"
+             android:fontFamily="@font/pop"
+-            android:text="Settings"
+-            android:layout_marginTop="400dp"
+-            android:layout_gravity="center"
+-            android:textSize="36sp"
+-            android:textColor="@color/black"
+-            />
++            android:padding="8dp"
++            android:text="@string/theme_setting"
++            android:textSize="18sp" />
++
++        <androidx.cardview.widget.CardView
++            android:id="@+id/ald"
++            style="@style/CardBackground"
++            android:layout_width="match_parent"
++            android:layout_height="60dp"
++            android:layout_rowWeight="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_marginStart="8dp"
++            android:layout_marginEnd="8dp"
++            android:layout_marginBottom="8dp"
++            app:cardCornerRadius="8dp"
++            app:cardElevation="8dp">
++
++            <LinearLayout
++                style="@style/CardBackground"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical|center_horizontal"
++                android:gravity="center"
++                android:orientation="horizontal"
++                tools:ignore="UseCompoundDrawables">
++
++                <TextView
++                    style="@style/TextColor"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:fontFamily="@font/pop"
++                    android:text="@string/dark_mode"
++                    android:textSize="18sp" />
++
++                <androidx.appcompat.widget.SwitchCompat
++                    android:id="@+id/switchMode"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:layout_marginStart="100dp"
++                    android:thumb="@drawable/th"
++                    app:track="@drawable/tk" />
++
++            </LinearLayout>
++
++        </androidx.cardview.widget.CardView>
+ 
+     </LinearLayout>
+ 
+@@ -32,8 +74,8 @@
+         android:layout_width="300dp"
+         android:layout_height="match_parent"
+         android:layout_gravity="start">
+-        <include
+-            layout="@layout/nav_drawer"/>
++
++        <include layout="@layout/nav_drawer" />
+     </RelativeLayout>
+ 
+ </androidx.drawerlayout.widget.DrawerLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/enterbor.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/enterbor.xml b/app/src/main/res/drawable/enterbor.xml
+new file mode 100644
+--- /dev/null	(date 1684553191774)
++++ b/app/src/main/res/drawable/enterbor.xml	(date 1684553191774)
+@@ -0,0 +1,12 @@
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++
++    <stroke
++        android:width="2dp"
++        android:color="@color/white"/>
++
++
++    <corners
++        android:radius="30dp"/>
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">DCA Signature</string>\r\n    <string name=\"sign\">DCA Signature is more than just a Cafe - it is a destination that aims to provide a memorable experience to its guests.The cafes about page reflects its commitment to quality, innovation, and customer satisfaction. At DCA Signature , they take pride in their concept dining experience that bridges the gap between traditional and modern flavors. Their menu is carefully crafted to showcase the best of both worlds, creating a unique fusion of tastes that are both familiar and exciting. But DCA Signature is more than just food. It is a place where people can come together, share stories, and create new memories. The Cafes cozy ambiance and warm hospitality create a welcoming atmosphere that makes guests feel at home. Moreover, DCA Signature commitment to quality extends beyond its menu. They are dedicated to using only the freshest and highest-quality ingredients in their dishes, ensuring that every meal is a feast for the senses. Whether you are looking for a place to enjoy a delicious meal, celebrate a special occasion, or just unwind after a long day, DCA Signature is the perfect choice. With its exceptional food, warm ambiance, and friendly service, it is a destination that is sure to leave a lasting impression.</string>\r\n    <string name=\"acc\">For more information visit or contact us on our social media accounts.</string>\r\n    <string name=\"all_day_breakfast\">All Day Breakfast</string>\r\n    <string name=\"angus_beef\">Angus Beef</string>\r\n    <string name=\"grilled_fried_burgers\">Grilled and Fried Burgers</string>\r\n    <string name=\"appetizers\">Appetizers</string>\r\n    <string name=\"adds_on\">Adds On</string>\r\n    <string name=\"salads\">Salads</string>\r\n    <string name=\"apartment_style_pasta\">Apartment Style Pasta</string>\r\n    <string name=\"sauce_and_dips\">Sauce and Dips</string>\r\n    <string name=\"sandwiches\">Sandwiches</string>\r\n    <string name=\"belgian_waffles\">Belgian Waffles</string>\r\n    <string name=\"buffalo_wings\">Buffalo Wings</string>\r\n    <string name=\"rice_meals\">Rice Meals</string>\r\n    <string name=\"expresso_hot_drinks\">Expresso Hot Drinks</string>\r\n    <string name=\"milkshakes\">Milkshakes</string>\r\n    <string name=\"iced_tea_influsion\">Iced Tea Influsion</string>\r\n    <string name=\"soda_pop\">Soda Pop</string>\r\n    <string name=\"non_expresso_hot_drinks\">Non Espresso Hot Drinks</string>\r\n    <string name=\"non_expresso_ice_blended\">Non Espresso Ice Blended</string>\r\n    <string name=\"expresso_ice_blended\">Espresso Ice Blended</string>\r\n    <string name=\"dca_signature_iced_coffee\">DCA Signature Iced Coffee</string>\r\n    <string name=\"slushies\">Slushies</string>\r\n    <string name=\"home_yogurt_drinks\">Home Yogurt Drinks</string>\r\n    <string name=\"foods\">FOODS</string>\r\n    <string name=\"foodstring\">FOODS</string>\r\n    <string name=\"location\">Location</string>\r\n    <string name=\"instagram\">Instagram</string>\r\n    <string name=\"facebook\">Facebook</string>\r\n    <string name=\"email\">Email</string>\r\n    <string name=\"about\">ABOUT</string>\r\n    <string name=\"search\">Search</string>\r\n    <string name=\"fods\">FOODS</string>\r\n    <string name=\"drinks\">DRINKS</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/values/strings.xml	(date 1684545313035)
+@@ -34,4 +34,6 @@
+     <string name="search">Search</string>
+     <string name="fods">FOODS</string>
+     <string name="drinks">DRINKS</string>
++    <string name="dark_mode">DARK THEME</string>
++    <string name="theme_setting">THEME SETTING</string>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"purple_200\">#FFBB86FC</color>\r\n    <color name=\"purple_500\">#FF6200EE</color>\r\n    <color name=\"purple_700\">#FF3700B3</color>\r\n    <color name=\"teal_200\">#FF03DAC5</color>\r\n    <color name=\"teal_700\">#FF018786</color>\r\n    <color name=\"black\">#FF000000</color>\r\n    <color name=\"white\">#FFFFFFFF</color>\r\n    <color name=\"brown\">#190606</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+--- a/app/src/main/res/values/colors.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/values/colors.xml	(date 1684508689989)
+@@ -8,4 +8,7 @@
+     <color name="black">#FF000000</color>
+     <color name="white">#FFFFFFFF</color>
+     <color name="brown">#190606</color>
++
++    <color name="grey">#aaa</color>
++    <color name="darkGrey">#ff424242</color>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.Dca\" parent=\"Theme.MaterialComponents.DayNight.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/brown</item>\r\n        <item name=\"colorPrimaryVariant\">@color/brown</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <!-- SplashScreen -->\r\n    <style parent=\"Theme.MaterialComponents.DayNight.NoActionBar\" name=\"SplashScreen\">\r\n        <item name=\"android:windowBackground\">@drawable/background_splashscreen</item>\r\n        <item name=\"android:statusBarColor\" >@color/black</item>\r\n\r\n    </style>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/themes.xml b/app/src/main/res/values/themes.xml
+--- a/app/src/main/res/values/themes.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/values/themes.xml	(date 1684547738533)
+@@ -21,4 +21,16 @@
+ 
+     </style>
+ 
++    <style name="ScreenBackground"><item name="android:background">@color/white</item></style>
++    <style name="CardBackground"><item name="android:background">@color/white</item></style>
++    <style name="TextColor"><item name="android:textColor">@color/black</item></style>
++
++    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
++        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
++        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
++    </style>
++
++    <style name="backbutton" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++        <item name="android:color">@color/brown</item>
++    </style>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.Dca\" parent=\"Theme.MaterialComponents.DayNight.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_200</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/black</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_200</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <!-- SplashScreen -->\r\n    <style parent=\"Theme.MaterialComponents.DayNight.NoActionBar\" name=\"SplashScreen\">\r\n        <item name=\"android:windowBackground\">@drawable/background_splashscreen</item>\r\n        <item name=\"android:statusBarColor\" >@color/black</item>\r\n\r\n    </style>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-night/themes.xml b/app/src/main/res/values-night/themes.xml
+--- a/app/src/main/res/values-night/themes.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/res/values-night/themes.xml	(date 1684508689958)
+@@ -18,7 +18,11 @@
+     <style parent="Theme.MaterialComponents.DayNight.NoActionBar" name="SplashScreen">
+         <item name="android:windowBackground">@drawable/background_splashscreen</item>
+         <item name="android:statusBarColor" >@color/black</item>
+-
+     </style>
+ 
++    <style name="ScreenBackground"><item name="android:background">@color/black</item></style>
++    <style name="CardBackground"><item name="android:background">@color/grey</item></style>
++    <style name="TextColor"><item name="android:textColor">@color/white</item></style>
++
++
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_update_product.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_update_product.xml b/app/src/main/res/layout/activity_update_product.xml
+new file mode 100644
+--- /dev/null	(date 1684545251982)
++++ b/app/src/main/res/layout/activity_update_product.xml	(date 1684545251982)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".updateProduct">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/updateProduct.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/updateProduct.java b/app/src/main/java/com/example/dca/updateProduct.java
+new file mode 100644
+--- /dev/null	(date 1684545252013)
++++ b/app/src/main/java/com/example/dca/updateProduct.java	(date 1684545252013)
+@@ -0,0 +1,14 @@
++package com.example.dca;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class updateProduct extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_update_product);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_add_product.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_add_product.xml b/app/src/main/res/layout/activity_add_product.xml
+new file mode 100644
+--- /dev/null	(date 1684553191778)
++++ b/app/src/main/res/layout/activity_add_product.xml	(date 1684553191778)
+@@ -0,0 +1,109 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:layout_margin="10dp"
++    android:background="@drawable/bottom_background"
++    tools:context=".addProduct">
++
++    <TextView
++        android:id="@+id/txth"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="30dp"
++        android:layout_marginTop="50dp"
++        android:layout_marginEnd="20dp"
++        android:layout_marginBottom="20dp"
++        android:fontFamily="@font/pop"
++        android:gravity="center"
++        android:inputType="text"
++        android:lines="1"
++        android:padding="8dp"
++        android:text="ADD PRODUCTS"
++        android:textColor="@color/white"
++        android:textSize="24sp"
++        android:textStyle="bold" />
++
++    <Button
++        android:id="@+id/btnSelectImage"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/edtprice"
++        android:layout_marginStart="170dp"
++        android:layout_marginTop="25dp"
++        android:layout_marginBottom="20dp"
++        android:backgroundTint="@color/white"
++        android:textColor="@color/black"
++        android:fontFamily="@font/pop"
++        android:text="Select Image" />
++
++    <EditText
++        android:id="@+id/edtname"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/txth"
++        android:layout_marginStart="20dp"
++        android:layout_marginTop="25dp"
++        android:layout_marginEnd="20dp"
++        android:layout_marginBottom="20dp"
++        android:fontFamily="@font/pop"
++        android:hint="Enter product name."
++        android:lines="1"
++        android:padding="10dp"
++        android:textColor="@color/white"
++        android:textColorHint="@color/white"
++        android:background="@drawable/enterbor"/>
++
++    <EditText
++        android:id="@+id/edtdescription"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/edtname"
++        android:layout_marginStart="20dp"
++        android:layout_marginTop="25dp"
++        android:layout_marginEnd="20dp"
++        android:layout_marginBottom="20dp"
++        android:fontFamily="@font/pop"
++        android:hint="Enter product description."
++        android:inputType="text"
++        android:lines="1"
++        android:padding="10dp"
++        android:textColor="@color/white"
++        android:textColorHint="@color/white"
++        android:background="@drawable/enterbor"/>
++
++    <EditText
++        android:id="@+id/edtprice"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/edtdescription"
++        android:layout_marginStart="20dp"
++        android:layout_marginTop="25dp"
++        android:layout_marginEnd="20dp"
++        android:layout_marginBottom="20dp"
++        android:fontFamily="@font/pop"
++        android:hint="Enter product price."
++        android:inputType="number"
++        android:lines="1"
++        android:padding="10dp"
++        android:textColor="@color/white"
++        android:textColorHint="@color/white"
++        android:background="@drawable/enterbor"/>
++
++    <Button
++        android:id="@+id/add"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/btnSelectImage"
++        android:layout_marginStart="50dp"
++        android:layout_marginTop="25dp"
++        android:layout_marginEnd="50dp"
++        android:layout_marginBottom="50dp"
++        android:backgroundTint="@color/white"
++        android:fontFamily="@font/pop"
++        android:text="ADD"
++        android:textColor="@color/black"
++        android:textSize="20sp" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/addProduct.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/addProduct.java b/app/src/main/java/com/example/dca/addProduct.java
+new file mode 100644
+--- /dev/null	(date 1684554072274)
++++ b/app/src/main/java/com/example/dca/addProduct.java	(date 1684554072274)
+@@ -0,0 +1,96 @@
++package com.example.dca;
++
++import android.content.Intent;
++import android.net.Uri;
++import android.os.Bundle;
++import android.widget.Button;
++import android.widget.EditText;
++import android.widget.Toast;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import com.google.firebase.database.DatabaseReference;
++import com.google.firebase.database.FirebaseDatabase;
++import com.google.firebase.storage.FirebaseStorage;
++import com.google.firebase.storage.StorageReference;
++import com.google.firebase.storage.UploadTask;
++
++public class addProduct extends AppCompatActivity {
++
++    private static final int PICK_IMAGE_REQUEST = 1;
++
++    private EditText edtName, edtDescription, edtPrice;
++    private DatabaseReference databaseProduct;
++    private StorageReference storageReference;
++    private Uri imageUri;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_add_product);
++
++        Button btnSelectImage = findViewById(R.id.btnSelectImage);
++        Button add = findViewById(R.id.add);
++        edtName = findViewById(R.id.edtname);
++        edtDescription = findViewById(R.id.edtdescription);
++        edtPrice = findViewById(R.id.edtprice);
++
++        databaseProduct = FirebaseDatabase.getInstance().getReference().child("products");
++        storageReference = FirebaseStorage.getInstance().getReference().child("product_images");
++
++        btnSelectImage.setOnClickListener(v -> openFileChooser());
++
++        add.setOnClickListener(v -> uploadProduct());
++    }
++
++    private void openFileChooser() {
++        Intent intent = new Intent();
++        intent.setType("image/*");
++        intent.setAction(Intent.ACTION_GET_CONTENT);
++        startActivityForResult(intent, PICK_IMAGE_REQUEST);
++    }
++
++    private void uploadProduct() {
++        if (imageUri != null) {
++            StorageReference fileReference = storageReference.child(System.currentTimeMillis() + ".jpg");
++
++            UploadTask uploadTask = fileReference.putFile(imageUri);
++            uploadTask.addOnCompleteListener(task -> {
++                if (task.isSuccessful()) {
++                    // Image uploaded successfully, get the download URL
++                    fileReference.getDownloadUrl().addOnSuccessListener(uri -> {
++                        String name = edtName.getText().toString().trim();
++                        String description = edtDescription.getText().toString().trim();
++                        String price = edtPrice.getText().toString().trim();
++                        String imageUrl = uri.toString();
++
++                        // Create a new Product object and save it to the database
++                        product product = new product(name, description, price, imageUrl);
++                        databaseProduct.push().setValue(product);
++
++                        Toast.makeText(addProduct.this, "Product added successfully", Toast.LENGTH_SHORT).show();
++                        finish();
++                    }).addOnFailureListener(e -> {
++                        // Error getting download URL
++                        Toast.makeText(addProduct.this, "Failed to get download URL: " + e.getMessage(), Toast.LENGTH_SHORT).show();
++                    });
++                } else {
++                    // Error uploading image
++                    Toast.makeText(addProduct.this, "Upload failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
++                }
++            });
++        } else {
++            Toast.makeText(this, "No image selected", Toast.LENGTH_SHORT).show();
++        }
++    }
++
++
++    @Override
++    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
++        super.onActivityResult(requestCode, resultCode, data);
++
++        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
++            imageUri = data.getData();
++        }
++    }
++}
+Index: app/src/main/res/layout/activity_delete_product.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_delete_product.xml b/app/src/main/res/layout/activity_delete_product.xml
+new file mode 100644
+--- /dev/null	(date 1684545313112)
++++ b/app/src/main/res/layout/activity_delete_product.xml	(date 1684545313112)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".deleteProduct">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/deleteProduct.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/deleteProduct.java b/app/src/main/java/com/example/dca/deleteProduct.java
+new file mode 100644
+--- /dev/null	(date 1684545313145)
++++ b/app/src/main/java/com/example/dca/deleteProduct.java	(date 1684545313145)
+@@ -0,0 +1,14 @@
++package com.example.dca;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class deleteProduct extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_delete_product);
++    }
++}
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'com.google.gms.google-services'\r\n}\r\n\r\nandroid {\r\n    namespace 'com.example.dca'\r\n    compileSdk 33\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.dca\"\r\n        minSdk 24\r\n        targetSdk 33\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.appcompat:appcompat:1.6.1'\r\n    implementation 'com.google.android.material:material:1.8.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'\r\n    implementation 'com.google.firebase:firebase-database-ktx:20.2.0'\r\n    implementation 'com.google.firebase:firebase-database:20.0.4'\r\n    implementation 'com.google.firebase:firebase-auth:21.3.0'\r\n    implementation 'androidx.recyclerview:recyclerview:1.3.0'\r\n    implementation 'androidx.cardview:cardview:1.0.0'\r\n    testImplementation 'junit:junit:4.13.2'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.5'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/build.gradle	(date 1684554371557)
+@@ -39,6 +39,9 @@
+     implementation 'com.google.firebase:firebase-auth:21.3.0'
+     implementation 'androidx.recyclerview:recyclerview:1.3.0'
+     implementation 'androidx.cardview:cardview:1.0.0'
++    implementation 'com.google.firebase:firebase-storage:20.0.1'
++    implementation 'com.google.android.gms:play-services-analytics-impl:18.0.1'
++    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+     testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_dsa_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.Dca\"\r\n        tools:targetApi=\"31\">\r\n        <activity\r\n            android:name=\".food_sec\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AdminActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".CartActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AboutActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".ProfileActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".SettingsActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Splashscreen\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/SplashScreen\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".LoginActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".SignupActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"false\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 0a7f6f214fb4c0ac7422034483cebd98c6254f2b)
++++ b/app/src/main/AndroidManifest.xml	(date 1684547738542)
+@@ -12,11 +12,30 @@
+         android:theme="@style/Theme.Dca"
+         tools:targetApi="31">
+         <activity
+-            android:name=".food_sec"
++            android:name=".deleteProduct"
++            android:exported="false"
++            android:parentActivityName=".adminProducts" />
++        <activity
++            android:name=".updateProduct"
++            android:exported="false"
++            android:parentActivityName=".adminProducts"/>
++        <activity
++            android:name=".addProduct"
++            android:exported="false"
++            android:parentActivityName=".adminProducts"/>
++        <activity
++            android:name=".adminProducts"
++            android:exported="false"/>
++        <activity
++            android:name=".adminOrders"
+             android:exported="false" />
+         <activity
+-            android:name=".AdminActivity"
++            android:name=".AdminPanel"
+             android:exported="false" />
++        <activity
++            android:name=".food_sec"
++            android:exported="false"
++            android:parentActivityName=".MainActivity"/>
+         <activity
+             android:name=".CartActivity"
+             android:exported="false" />
+Index: app/src/main/res/layout/activity_admin_panel.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_admin_panel.xml b/app/src/main/res/layout/activity_admin_panel.xml
+new file mode 100644
+--- /dev/null	(date 1684544892195)
++++ b/app/src/main/res/layout/activity_admin_panel.xml	(date 1684544892195)
+@@ -0,0 +1,40 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    tools:context=".MainActivity">
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="ADMIN PANEL HOME"
++        android:background="@color/brown"
++        android:textSize="24sp"
++        android:id="@+id/txth"
++        android:gravity="center"
++        android:fontFamily="@font/pop"
++        android:padding="8dp"
++
++        android:textColor="@color/white"/>
++
++    <com.google.android.material.bottomnavigation.BottomNavigationView
++        android:id="@+id/bottomNavigation"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_alignParentBottom="true"
++        android:layout_marginEnd="20dp"
++        android:layout_marginStart="20dp"
++        android:layout_marginBottom="30dp"
++        android:layout_marginTop="30dp"
++        android:background="@drawable/bottom_background"
++        android:elevation="2dp"
++        app:itemIconSize="30dp"
++        app:itemIconTint="@drawable/item_selector"
++        app:itemRippleColor="@android:color/transparent"
++        app:labelVisibilityMode="unlabeled"
++        app:menu="@menu/bottom_menu" />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/dca/AdminPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/dca/AdminPanel.java b/app/src/main/java/com/example/dca/AdminPanel.java
+new file mode 100644
+--- /dev/null	(date 1684544527206)
++++ b/app/src/main/java/com/example/dca/AdminPanel.java	(date 1684544527206)
+@@ -0,0 +1,48 @@
++package com.example.dca;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.ImageButton;
++import android.widget.ImageView;
++import android.widget.Toast;
++
++import com.google.android.material.bottomnavigation.BottomNavigationView;
++import com.google.firebase.auth.FirebaseAuth;
++
++public class AdminPanel extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_admin_panel);
++        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
++        bottomNavigationView.setSelectedItemId(R.id.bottom_home);
++
++
++        bottomNavigationView.setOnItemSelectedListener(item -> {
++            switch (item.getItemId()) {
++                case R.id.bottom_home:
++                    return true;
++                case R.id.bottom_products:
++                    startActivity(new Intent(getApplicationContext(), adminProducts.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.bottom_orders:
++                    startActivity(new Intent(getApplicationContext(), adminOrders.class));
++                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
++                    finish();
++                    return true;
++                case R.id.logout:
++                    startActivity(new Intent(getApplicationContext(), LoginActivity.class));
++                    finish();
++                    return true;
++            }
++            return false;
++        });
++
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/baseline_exit_to_app_24.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_exit_to_app_24.xml b/app/src/main/res/drawable/baseline_exit_to_app_24.xml
+new file mode 100644
+--- /dev/null	(date 1684535805317)
++++ b/app/src/main/res/drawable/baseline_exit_to_app_24.xml	(date 1684535805317)
+@@ -0,0 +1,5 @@
++<vector android:autoMirrored="true" android:height="40dp"
++    android:tint="#000000" android:viewportHeight="24"
++    android:viewportWidth="24" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M10.09,15.59L11.5,17l5,-5 -5,-5 -1.41,1.41L12.67,11H3v2h9.67l-2.58,2.59zM19,3H5c-1.11,0 -2,0.9 -2,2v4h2V5h14v14H5v-4H3v4c0,1.1 0.89,2 2,2h14c1.1,0 2,-0.9 2,-2V5c0,-1.1 -0.9,-2 -2,-2z"/>
++</vector>
+Index: app/src/main/res/anim/slide_in_right.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/anim/slide_in_right.xml b/app/src/main/res/anim/slide_in_right.xml
+new file mode 100644
+--- /dev/null	(date 1684005963107)
++++ b/app/src/main/res/anim/slide_in_right.xml	(date 1684005963107)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++
++<set xmlns:android="http://schemas.android.com/apk/res/android">
++    <translate
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromXDelta="100%p"
++        android:toXDelta="0" />
++</set>
+\ No newline at end of file
+Index: app/src/main/res/drawable/baseline_mode_night_24.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_mode_night_24.xml b/app/src/main/res/drawable/baseline_mode_night_24.xml
+new file mode 100644
+--- /dev/null	(date 1683638559947)
++++ b/app/src/main/res/drawable/baseline_mode_night_24.xml	(date 1683638559947)
+@@ -0,0 +1,5 @@
++<vector android:autoMirrored="true" android:height="24dp"
++    android:tint="#3C3F41" android:viewportHeight="24"
++    android:viewportWidth="24" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M9.5,2c-1.82,0 -3.53,0.5 -5,1.35c2.99,1.73 5,4.95 5,8.65s-2.01,6.92 -5,8.65C5.97,21.5 7.68,22 9.5,22c5.52,0 10,-4.48 10,-10S15.02,2 9.5,2z"/>
++</vector>
+Index: app/src/main/res/anim/slide_out_left.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/anim/slide_out_left.xml b/app/src/main/res/anim/slide_out_left.xml
+new file mode 100644
+--- /dev/null	(date 1684005932973)
++++ b/app/src/main/res/anim/slide_out_left.xml	(date 1684005932973)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++
++<set xmlns:android="http://schemas.android.com/apk/res/android">
++    <translate
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromXDelta="0"
++        android:toXDelta="-100%p" />
++</set>
+\ No newline at end of file
+Index: app/src/main/res/drawable/baseline_wb_sunny_24.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/baseline_wb_sunny_24.xml b/app/src/main/res/drawable/baseline_wb_sunny_24.xml
+new file mode 100644
+--- /dev/null	(date 1683638484534)
++++ b/app/src/main/res/drawable/baseline_wb_sunny_24.xml	(date 1683638484534)
+@@ -0,0 +1,5 @@
++<vector android:autoMirrored="true" android:height="24dp"
++    android:tint="#FDB601" android:viewportHeight="24"
++    android:viewportWidth="24" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="@android:color/white" android:pathData="M6.76,4.84l-1.8,-1.79 -1.41,1.41 1.79,1.79 1.42,-1.41zM4,10.5L1,10.5v2h3v-2zM13,0.55h-2L11,3.5h2L13,0.55zM20.45,4.46l-1.41,-1.41 -1.79,1.79 1.41,1.41 1.79,-1.79zM17.24,18.16l1.79,1.8 1.41,-1.41 -1.8,-1.79 -1.4,1.4zM20,10.5v2h3v-2h-3zM12,5.5c-3.31,0 -6,2.69 -6,6s2.69,6 6,6 6,-2.69 6,-6 -2.69,-6 -6,-6zM11,22.45h2L13,19.5h-2v2.95zM3.55,18.54l1.41,1.41 1.79,-1.8 -1.41,-1.41 -1.79,1.8z"/>
++</vector>
+Index: app/src/main/res/menu/bottom_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/menu/bottom_menu.xml b/app/src/main/res/menu/bottom_menu.xml
+new file mode 100644
+--- /dev/null	(date 1684543614440)
++++ b/app/src/main/res/menu/bottom_menu.xml	(date 1684543614440)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<menu xmlns:android="http://schemas.android.com/apk/res/android">
++
++
++    <item
++        android:id="@+id/bottom_home"
++        android:icon="@drawable/baseline_home_24"
++        android:title="Home" />
++
++    <item
++        android:id="@+id/bottom_products"
++        android:icon="@drawable/baseline_products_24"
++        android:title="Products" />
++
++    <item
++        android:id="@+id/bottom_orders"
++        android:icon="@drawable/baseline_shopping_cart"
++        android:title="Orders" />
++
++    <item
++        android:id="@+id/logout"
++        android:icon="@drawable/baseline_exit_to_app_24"
++        android:title="Logout" />
++
++
++</menu>
+\ No newline at end of file

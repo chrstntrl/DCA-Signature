@@ -1,0 +1,285 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dca"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:24:5-79
+13-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:25:5-67
+14-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:25:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.dca.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.dca.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:5:5-51:19
+23        android:allowBackup="true"
+23-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] C:\Users\norie\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@mipmap/ic_dsa_launcher"
+29-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:9:9-47
+30        android:label="@string/app_name"
+30-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:10:9-41
+31        android:supportsRtl="true"
+31-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:11:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.Dca" >
+33-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:12:9-41
+34        <activity
+34-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:14:9-16:40
+35            android:name="com.example.dca.food_sec"
+35-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:15:13-37
+36            android:exported="false" />
+36-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:16:13-37
+37        <activity
+37-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:17:9-19:40
+38            android:name="com.example.dca.AdminActivity"
+38-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:18:13-42
+39            android:exported="false" />
+39-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:19:13-37
+40        <activity
+40-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:20:9-22:40
+41            android:name="com.example.dca.CartActivity"
+41-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:21:13-41
+42            android:exported="false" />
+42-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:22:13-37
+43        <activity
+43-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:23:9-25:40
+44            android:name="com.example.dca.AboutActivity"
+44-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:24:13-42
+45            android:exported="false" />
+45-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:25:13-37
+46        <activity
+46-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:26:9-28:40
+47            android:name="com.example.dca.ProfileActivity"
+47-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:27:13-44
+48            android:exported="false" />
+48-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:28:13-37
+49        <activity
+49-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:29:9-31:40
+50            android:name="com.example.dca.SettingsActivity"
+50-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:30:13-45
+51            android:exported="false" />
+51-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:31:13-37
+52        <activity
+52-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:32:9-41:20
+53            android:name="com.example.dca.Splashscreen"
+53-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:33:13-41
+54            android:exported="true"
+54-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:34:13-36
+55            android:theme="@style/SplashScreen" >
+55-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:35:13-48
+56            <intent-filter>
+56-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:36:13-40:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:37:17-69
+57-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:37:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:39:17-77
+59-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:39:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:42:9-44:40
+63            android:name="com.example.dca.LoginActivity"
+63-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:43:13-42
+64            android:exported="false" />
+64-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:44:13-37
+65        <activity
+65-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:45:9-47:40
+66            android:name="com.example.dca.SignupActivity"
+66-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:46:13-43
+67            android:exported="false" />
+67-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:47:13-37
+68        <activity
+68-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:48:9-50:40
+69            android:name="com.example.dca.MainActivity"
+69-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:49:13-41
+70            android:exported="false" />
+70-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:50:13-37
+71
+72        <service
+72-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
+73            android:name="com.google.firebase.components.ComponentDiscoveryService"
+73-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:12:13-84
+74            android:directBootAware="true"
+74-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+75            android:exported="false" >
+75-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:13:13-37
+76            <meta-data
+76-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+77                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+77-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:15:17-124
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\f2a8b08e638a5771f288e24e69ec90f0\transformed\jetified-firebase-database-ktx-20.2.0\AndroidManifest.xml:16:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
+80                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+80-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-database:20.2.0] C:\Users\norie\.gradle\caches\transforms-3\4b1e3dfb2fe5c30c02b6706df73b4e8b\transformed\jetified-firebase-database-20.2.0\AndroidManifest.xml:33:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+83-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+86                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+86-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+88        </service>
+89
+90        <activity
+90-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+91            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+91-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+92            android:excludeFromRecents="true"
+92-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+93            android:exported="true"
+93-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+94            android:launchMode="singleTask"
+94-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+95-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+96            <intent-filter>
+96-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+97                <action android:name="android.intent.action.VIEW" />
+97-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+97-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+98
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+99-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+100                <category android:name="android.intent.category.BROWSABLE" />
+100-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+100-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+101
+102                <data
+102-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+103                    android:host="firebase.auth"
+103-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+104                    android:path="/"
+104-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+105                    android:scheme="genericidp" />
+105-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+106            </intent-filter>
+107        </activity>
+108        <activity
+108-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+109            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+109-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+110            android:excludeFromRecents="true"
+110-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+111            android:exported="true"
+111-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+112            android:launchMode="singleTask"
+112-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+113-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+114            <intent-filter>
+114-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+115-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+117-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+118-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+119
+120                <data
+120-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+121                    android:host="firebase.auth"
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+122                    android:path="/"
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+123                    android:scheme="recaptcha" />
+123-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\norie\.gradle\caches\transforms-3\b59fc5f3b2cebe5958ec5096e1ce326e\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+124            </intent-filter>
+125        </activity>
+126
+127        <provider
+127-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+128            android:name="com.google.firebase.provider.FirebaseInitProvider"
+128-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+129            android:authorities="com.example.dca.firebaseinitprovider"
+129-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+130            android:directBootAware="true"
+130-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+131            android:exported="false"
+131-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+132            android:initOrder="100" />
+132-->[com.google.firebase:firebase-common:20.3.2] C:\Users\norie\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+133
+134        <activity
+134-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+135            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+135-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+136            android:exported="false"
+136-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+137-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+138
+139        <meta-data
+139-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+140            android:name="com.google.android.gms.version"
+140-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+141            android:value="@integer/google_play_services_version" />
+141-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\norie\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+142
+143        <provider
+143-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+144            android:name="androidx.startup.InitializationProvider"
+144-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+145            android:authorities="com.example.dca.androidx-startup"
+145-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+146            android:exported="false" >
+146-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+147            <meta-data
+147-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+148                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+148-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+149                android:value="androidx.startup" />
+149-->[androidx.emoji2:emoji2:1.2.0] C:\Users\norie\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+150            <meta-data
+150-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\norie\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+151                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+151-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\norie\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+152                android:value="androidx.startup" />
+152-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\norie\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+153        </provider>
+154    </application>
+155
+156</manifest>
