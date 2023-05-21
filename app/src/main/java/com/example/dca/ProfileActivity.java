@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
     TextView titleName, titleUsername;
     Button editProfile;
     DrawerLayout drawerlayout;
-    ImageView menu,order;
+    ImageView menu, order;
     LinearLayout home, profile, cart, settings, about, logout;
 
 
@@ -45,6 +45,7 @@ public class ProfileActivity extends AppCompatActivity {
         settings = findViewById(R.id.settings);
         about = findViewById(R.id.about);
         logout = findViewById(R.id.logout);
+        order = findViewById(R.id.order);
         profileName = findViewById(R.id.profileName);
         profileEmail = findViewById(R.id.profileEmail);
         profileUsername = findViewById(R.id.profileUsername);
@@ -57,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                redirectActivity(ProfileActivity.this, EditProfile.class);
                 passUserData();
             }
         });
@@ -128,16 +130,8 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(ProfileActivity.this, "Logout successful", Toast.LENGTH_SHORT).show();
             }
         });
+        order.setOnClickListener(v -> redirectActivity(ProfileActivity.this, orderActivity.class));}
 
-
-        order.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                redirectActivity(ProfileActivity.this, orderActivity.class);
-            }
-        });
-
-    }
     public static void openDrawer(DrawerLayout drawerLayout){
         drawerLayout.openDrawer(GravityCompat.START);
     }
@@ -158,5 +152,3 @@ public class ProfileActivity extends AppCompatActivity {
         closeDrawer(drawerlayout);
     }
 }
-
-

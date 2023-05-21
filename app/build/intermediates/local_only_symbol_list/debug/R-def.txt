@@ -4,6 +4,7 @@ anim slide_in_right
 anim slide_out_left
 color black
 color brown
+color custom_checkbox_color
 color darkGrey
 color grey
 color ic_dsa_launcher_background
@@ -125,6 +126,7 @@ id foodsLayout
 id foodsRecyclerView
 id foods_list
 id home
+id include
 id instagram
 id li_button
 id li_pass
@@ -269,6 +271,7 @@ string title_username
 string welcome
 style CardBackground
 style CustomActivityAnimation
+style CustomCheckboxStyle
 style ScreenBackground
 style SplashScreen
 style TextColor

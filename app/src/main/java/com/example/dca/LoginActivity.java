@@ -23,6 +23,9 @@ public class LoginActivity extends AppCompatActivity {
     TextView lisignup;
     Button libutton;
 
+    private static final String KEY_USERNAME = "username";
+    private static final String KEY_PASSWORD = "password";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,5 +131,12 @@ public class LoginActivity extends AppCompatActivity {
                 // Handle error
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(KEY_USERNAME, liusername.getText().toString());
+        outState.putString(KEY_PASSWORD, lipass.getText().toString());
     }
 }

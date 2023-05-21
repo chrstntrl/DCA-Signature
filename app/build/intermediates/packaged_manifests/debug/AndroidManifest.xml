@@ -45,17 +45,10 @@
             android:name="com.example.dca.adminOrder"
             android:exported="false" />
         <activity
-            android:name="com.example.dca.ui.login.adminOrders"
-            android:exported="false"
-            android:label="@string/title_activity_admin_orders" />
-        <activity
             android:name="com.example.dca.AdminPanel"
             android:exported="false" />
         <activity
             android:name="com.example.dca.food_sec"
-            android:exported="false" />
-        <activity
-            android:name="com.example.dca.AdminActivity"
             android:exported="false" />
         <activity
             android:name="com.example.dca.CartActivity"

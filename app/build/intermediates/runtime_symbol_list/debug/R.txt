@@ -1247,6 +1247,7 @@ int color common_google_signin_btn_text_light_disabled 0x7f05003b
 int color common_google_signin_btn_text_light_focused 0x7f05003c
 int color common_google_signin_btn_text_light_pressed 0x7f05003d
 int color common_google_signin_btn_tint 0x7f05003e
+int color custom_checkbox_color 0x7f050266
 int color darkGrey 0x7f05003f
 int color design_bottom_navigation_shadow_color 0x7f050040
 int color design_box_stroke_color 0x7f050041
@@ -2884,6 +2885,7 @@ int id ignore 0x7f090105
 int id ignoreRequest 0x7f090106
 int id image 0x7f090107
 int id immediateStop 0x7f090108
+int id include 0x7f09023c
 int id included 0x7f090109
 int id info 0x7f09010a
 int id instagram 0x7f09010b
@@ -3893,6 +3895,7 @@ int style CardView 0x7f110112
 int style CardView_Dark 0x7f110113
 int style CardView_Light 0x7f110114
 int style CustomActivityAnimation 0x7f110115
+int style CustomCheckboxStyle 0x7f110400
 int style EmptyTheme 0x7f110116
 int style MaterialAlertDialog_Material3 0x7f110117
 int style MaterialAlertDialog_Material3_Body_Text 0x7f110118

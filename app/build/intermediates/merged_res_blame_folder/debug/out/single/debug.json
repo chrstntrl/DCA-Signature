@@ -12,12 +12,12 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\font\\pop.ttf"
     },
     {
-        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\layout_activity_splashscreen.xml.flat",
-        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\layout\\activity_splashscreen.xml"
-    },
-    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\mipmap-hdpi_ic_dsa_launcher.png.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\mipmap-hdpi\\ic_dsa_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\layout_activity_splashscreen.xml.flat",
+        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\layout\\activity_splashscreen.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_nav_bg.xml.flat",
@@ -54,10 +54,6 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_rice.JPG.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\drawable\\rice.JPG"
-    },
-    {
-        "merged": "com.example.dca.app-merged_res-34:/layout_activity_order.xml.flat",
-        "source": "com.example.dca.app-main-36:/layout/activity_order.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_thtrue.xml.flat",
@@ -310,6 +306,10 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_icbld.JPG.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\drawable\\icbld.JPG"
+    },
+    {
+        "merged": "com.example.dca.app-merged_res-34:/layout_activity_profile.xml.flat",
+        "source": "com.example.dca.app-main-36:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\layout_activity_order.xml.flat",
