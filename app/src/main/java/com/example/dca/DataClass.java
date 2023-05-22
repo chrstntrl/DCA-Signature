@@ -1,7 +1,6 @@
 package com.example.dca;
 
 public class DataClass {
-    private String dataCategory;
     private String dataName;
     private String dataDesc;
     private String dataPrice;
@@ -13,26 +12,22 @@ public class DataClass {
     public void setKey(String key) {
         this.key = key;
     }
-    public String getDataCategory() {
-        return dataCategory;
-    }
-    public String getDataName() {
+    public String getDataTitle() {
         return dataName;
     }
     public String getDataDesc() {
         return dataDesc;
     }
-    public String getDataPrice() {
+    public String getDataLang() {
         return dataPrice;
     }
     public String getDataImage() {
         return dataImage;
     }
-    public DataClass(String dataCategory, String dataName, String dataDesc, String dataPrice, String dataImage) {
-        this.dataCategory = dataCategory;
-        this.dataName = dataName;
+    public DataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
+        this.dataName = dataTitle;
         this.dataDesc = dataDesc;
-        this.dataPrice = dataPrice;
+        this.dataPrice = dataLang;
         this.dataImage = dataImage;
     }
     public DataClass(){

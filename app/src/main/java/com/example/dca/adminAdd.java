@@ -36,7 +36,7 @@ import java.util.Calendar;
 public class adminAdd extends AppCompatActivity {
     ImageView uploadImage;
     Button saveButton;
-    EditText uploadCategory, uploadName, uploadDesc, uploadPrice;
+    EditText uploadName, uploadDesc, uploadPrice;
     String imageURL;
     Uri uri;
 
@@ -46,7 +46,6 @@ public class adminAdd extends AppCompatActivity {
         setContentView(R.layout.activity_admin_add);
 
         uploadImage = findViewById(R.id.uploadImage);
-        uploadCategory = findViewById(R.id.uploadCategory);
         uploadName = findViewById(R.id.uploadName);
         uploadDesc = findViewById(R.id.uploadDesc);
         uploadPrice = findViewById(R.id.uploadPrice);
@@ -123,11 +122,10 @@ public class adminAdd extends AppCompatActivity {
     }
 
     public void uploadData() {
-        String category = uploadCategory.getText().toString();
         String name = uploadName.getText().toString();
         String desc = uploadDesc.getText().toString();
         String price = uploadPrice.getText().toString();
-        DataClass dataClass = new DataClass(category, name, desc, price, imageURL);
+        DataClass dataClass = new DataClass(name, desc, price, imageURL);
         //We are changing the child from title to currentDate,
         // because we will be updating title as well and it may affect child value.
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());

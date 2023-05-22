@@ -37,21 +37,6 @@
             android:src="@drawable/uploadp" />
 
         <EditText
-            android:id="@+id/uploadCategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/pop"
-            android:hint="Enter Category"
-            android:inputType="text"
-            android:lines="1"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="18dp" />
-
-
-        <EditText
             android:id="@+id/uploadName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
