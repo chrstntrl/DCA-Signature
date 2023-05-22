@@ -38,7 +38,7 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
@@ -55,9 +55,9 @@
             android:id="@+id/uploadName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/brown_border"
             android:fontFamily="@font/pop"
@@ -67,15 +67,15 @@
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="18dp" />
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/uploadDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/brown_border"
             android:fontFamily="@font/pop"
@@ -85,15 +85,15 @@
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="18dp" />
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/uploadPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/brown_border"
             android:fontFamily="@font/pop"
@@ -103,7 +103,7 @@
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="18dp" />
+            android:textSize="14dp" />
 
         <Button
             android:id="@+id/btnadd"
@@ -115,7 +115,8 @@
             android:fontFamily="@font/pop"
             android:text="ADD"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 </RelativeLayout>
