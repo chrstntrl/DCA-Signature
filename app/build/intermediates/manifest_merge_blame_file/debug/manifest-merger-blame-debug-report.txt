@@ -181,11 +181,11 @@
 97                android:value="com.google.firebase.components.ComponentRegistrar" />
 97-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\norie\.gradle\caches\transforms-3\82c07f5b1b63ff1593253e347e0de20c\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
 98            <meta-data
-98-->[com.google.firebase:firebase-database:20.0.0] C:\Users\norie\.gradle\caches\transforms-3\9012ea1e63b4d0c226954606c699ee15\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:32:13-34:85
+98-->[com.google.firebase:firebase-database:20.0.4] C:\Users\norie\.gradle\caches\transforms-3\6589bb9e0c5eceb1e0ab2756357b4698\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
 99                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-99-->[com.google.firebase:firebase-database:20.0.0] C:\Users\norie\.gradle\caches\transforms-3\9012ea1e63b4d0c226954606c699ee15\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:33:17-109
+99-->[com.google.firebase:firebase-database:20.0.4] C:\Users\norie\.gradle\caches\transforms-3\6589bb9e0c5eceb1e0ab2756357b4698\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
 100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[com.google.firebase:firebase-database:20.0.0] C:\Users\norie\.gradle\caches\transforms-3\9012ea1e63b4d0c226954606c699ee15\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:34:17-82
+100-->[com.google.firebase:firebase-database:20.0.4] C:\Users\norie\.gradle\caches\transforms-3\6589bb9e0c5eceb1e0ab2756357b4698\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
 101            <meta-data
 101-->[com.google.firebase:firebase-config:21.0.2] C:\Users\norie\.gradle\caches\transforms-3\4f2e69081e5bffdfed22e273ff3db499\transformed\jetified-firebase-config-21.0.2\AndroidManifest.xml:32:13-34:85
 102                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"

@@ -4,20 +4,20 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\font_pop.ttf.flat",
-        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\font\\pop.ttf"
-    },
-    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_wing.JPG.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\drawable\\wing.JPG"
     },
     {
-        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\mipmap-hdpi_ic_dsa_launcher.png.flat",
-        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\mipmap-hdpi\\ic_dsa_launcher.png"
+        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\font_pop.ttf.flat",
+        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\font\\pop.ttf"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\layout_activity_splashscreen.xml.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\layout\\activity_splashscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\mipmap-hdpi_ic_dsa_launcher.png.flat",
+        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\mipmap-hdpi\\ic_dsa_launcher.png"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_franks.JPG.flat",
@@ -350,6 +350,10 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable-mdpi_ic_phone.png.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\drawable-mdpi\\ic_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\drawable_whitie.xml.flat",
+        "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-36:\\drawable\\whitie.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-34:\\mipmap-xxhdpi_ic_dsa_launcher_foreground.png.flat",

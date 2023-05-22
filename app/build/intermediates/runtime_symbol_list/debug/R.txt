@@ -64,6 +64,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001c
 int animator mtrl_fab_show_motion_spec 0x7f02001d
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02001e
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f02001f
+int array spinner_values 0x7f140000
 int attr ConstraintRotate 0x7f030000
 int attr SharedValue 0x7f030001
 int attr SharedValueId 0x7f030002
@@ -2618,6 +2619,7 @@ int drawable tooltip_frame_light 0x7f0700eb
 int drawable uploadp 0x7f0700ec
 int drawable waffles 0x7f0700ed
 int drawable white_background 0x7f0700ee
+int drawable whitie 0x7f0700f1
 int drawable wing 0x7f0700ef
 int drawable yogurt 0x7f0700f0
 int font pop 0x7f080000
@@ -3080,6 +3082,7 @@ int id snapMargins 0x7f0901c7
 int id south 0x7f0901c8
 int id spacer 0x7f0901c9
 int id special_effects_controller_view_tag 0x7f0901ca
+int id spinner 0x7f09023b
 int id spline 0x7f0901cb
 int id split_action_bar 0x7f0901cc
 int id spread 0x7f0901cd

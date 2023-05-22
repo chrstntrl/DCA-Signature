@@ -1,25 +1,18 @@
 package com.example.dca;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,14 +23,12 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.text.DateFormat;
-import java.util.Calendar;
-
 public class adminAdd extends AppCompatActivity {
     ImageView uploadImage;
     Button saveButton;
     EditText uploadName, uploadDesc, uploadPrice;
     String imageURL;
+    Spinner spinner;
     Uri uri;
 
     @Override
@@ -50,29 +41,18 @@ public class adminAdd extends AppCompatActivity {
         uploadDesc = findViewById(R.id.uploadDesc);
         uploadPrice = findViewById(R.id.uploadPrice);
         saveButton = findViewById(R.id.btnadd);
-        ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
-                new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult result) {
-                        if (result.getResultCode() == Activity.RESULT_OK) {
-                            Intent data = result.getData();
-                            uri = data.getData();
-                            uploadImage.setImageURI(uri);
-                        } else {
-                            Toast.makeText(adminAdd.this, "No Image Selected", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }
-        );
-        uploadImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent photoPicker = new Intent(Intent.ACTION_PICK);
-                photoPicker.setType("image/*");
-                activityResultLauncher.launch(photoPicker);
-            }
+        spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner_values, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        uploadImage.setOnClickListener(view -> {
+            Intent photoPicker = new Intent(Intent.ACTION_PICK);
+            photoPicker.setType("image/*");
+            startActivityForResult(photoPicker, 1);
         });
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,25 +61,41 @@ public class adminAdd extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == 1) {
+            if (data != null) {
+                uri = data.getData();
+                uploadImage.setImageURI(uri);
+            } else {
+                Toast.makeText(adminAdd.this, "No Image Selected", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     public void saveData() {
         if (uri == null) {
             Toast.makeText(this, "No Image Selected", Toast.LENGTH_SHORT).show();
             return;
         }
-        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Android Images")
+
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Images")
                 .child(uri.getLastPathSegment());
+
         AlertDialog.Builder builder = new AlertDialog.Builder(adminAdd.this);
         builder.setCancelable(false);
         builder.setView(R.layout.progress_layout);
         AlertDialog dialog = builder.create();
         dialog.show();
+
         storageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
                 uriTask.addOnCompleteListener(new OnCompleteListener<Uri>() {
                     @Override
-                    public void onComplete(@NonNull Task<Uri> task) {
+                    public void onComplete(Task<Uri> task) {
                         if (task.isSuccessful()) {
                             Uri urlImage = task.getResult();
                             imageURL = urlImage.toString();
@@ -114,7 +110,7 @@ public class adminAdd extends AppCompatActivity {
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
-            public void onFailure(@NonNull Exception e) {
+            public void onFailure(Exception e) {
                 dialog.dismiss();
                 Toast.makeText(adminAdd.this, "Failed to upload image", Toast.LENGTH_SHORT).show();
             }
@@ -125,14 +121,13 @@ public class adminAdd extends AppCompatActivity {
         String name = uploadName.getText().toString();
         String desc = uploadDesc.getText().toString();
         String price = uploadPrice.getText().toString();
+        String selectedSpinnerItem = spinner.getSelectedItem().toString();
         DataClass dataClass = new DataClass(name, desc, price, imageURL);
-        //We are changing the child from title to currentDate,
-        // because we will be updating title as well and it may affect child value.
-        String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
-        FirebaseDatabase.getInstance().getReference("products").child(currentDate)
+
+        FirebaseDatabase.getInstance().getReference("products").child(selectedSpinnerItem)
                 .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
-                    public void onComplete(@NonNull Task<Void> task) {
+                    public void onComplete(Task<Void> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(adminAdd.this, "Saved", Toast.LENGTH_SHORT).show();
                             finish();
@@ -142,7 +137,7 @@ public class adminAdd extends AppCompatActivity {
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
-                    public void onFailure(@NonNull Exception e) {
+                    public void onFailure(Exception e) {
                         Toast.makeText(adminAdd.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });

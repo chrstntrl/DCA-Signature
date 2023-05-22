@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="spinner_values">
+        <item>All day Breakfast</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="brown">#190606</color>
     <color name="custom_checkbox_color">#190606</color>
