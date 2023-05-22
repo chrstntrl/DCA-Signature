@@ -12,22 +12,22 @@ public class DataClass {
     public void setKey(String key) {
         this.key = key;
     }
-    public String getDataTitle() {
+    public String getDataName() {
         return dataName;
     }
     public String getDataDesc() {
         return dataDesc;
     }
-    public String getDataLang() {
+    public String getDataPrice() {
         return dataPrice;
     }
     public String getDataImage() {
         return dataImage;
     }
-    public DataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
-        this.dataName = dataTitle;
+    public DataClass(String dataName, String dataDesc, String dataPrice, String dataImage) {
+        this.dataName = dataName;
         this.dataDesc = dataDesc;
-        this.dataPrice = dataLang;
+        this.dataPrice = dataPrice;
         this.dataImage = dataImage;
     }
     public DataClass(){
