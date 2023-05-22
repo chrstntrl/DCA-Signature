@@ -76,6 +76,7 @@ drawable th
 drawable thfalse
 drawable thtrue
 drawable tk
+drawable uploadp
 drawable waffles
 drawable white_background
 drawable wing
@@ -109,7 +110,6 @@ id cardview1
 id cardview2
 id cart
 id dca
-id description
 id drawerLayout
 id editButton
 id editEmail
@@ -140,7 +140,6 @@ id name
 id order
 id password
 id pic1
-id price
 id profile
 id profileEmail
 id profileImg
@@ -166,6 +165,10 @@ id titleName
 id titleUsername
 id toolbar
 id txtprod
+id uploadDesc
+id uploadImage
+id uploadName
+id uploadPrice
 id username
 layout activity_about
 layout activity_admin_add
@@ -187,6 +190,7 @@ layout activity_signup
 layout activity_splashscreen
 layout foods_list_elements
 layout nav_drawer
+layout progress_layout
 layout toolbox
 menu bottom_menu
 mipmap ic_dsa_launcher

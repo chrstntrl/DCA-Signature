@@ -2616,6 +2616,7 @@ drawable thtrue
 drawable tk
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uploadp
 drawable waffles
 drawable white_background
 drawable wing
@@ -2800,7 +2801,6 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3016,7 +3016,6 @@ id pic1
 id pin
 id position
 id postLayout
-id price
 id profile
 id profileEmail
 id profileImg
@@ -3169,6 +3168,10 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uploadDesc
+id uploadImage
+id uploadName
+id uploadPrice
 id useLogo
 id username
 id vertical_only
@@ -3365,6 +3368,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout progress_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
