@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/D:/sdk/icons/material/materialicons/fastfood/baseline_fastfood_24.xml" />
+                                      <entry key="url" value="file:/D:/sdk/icons/material/materialicons/delete/baseline_delete_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="baseline_fastfood_24" />
+                            <entry key="autoMirrored" value="true" />
+                            <entry key="outputName" value="baseline_delete_24" />
                             <entry key="sourceFile" value="C:\Users\norie\Documents\GitHub\DCA-Signature" />
                           </map>
                         </option>

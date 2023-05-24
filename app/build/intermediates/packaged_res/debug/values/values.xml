@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinner_values">
-        <item>All day Breakfast</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
+        <item>All Day Breakfast</item>
+        <item>Angus Beef</item>
+        <item>Rice Meals</item>
+        <item>Buffalo Wings</item>
+        <item>Belgian Waffles</item>
+        <item>Sandwiches</item>
+        <item>Grilled Fried Burgers</item>
+        <item>Apartment Style Pasta</item>
+        <item>Appetizers</item>
 
+        <item>Milkshakes</item>
+        <item>Slushies</item>
+        <item>Iced Tea Influsion</item>
+        <item>Home Yogurt</item>
+        <item>Soda Pop</item>
+        <item>Espresso Hot Drinks</item>
+        <item>Non Espresso Hot Drinks</item>
+        <item>Espresso Ice Blended</item>
+        <item>Non Espresso Ice Blended</item>
+        <item>DCA Signature Iced Coffee</item>
     </string-array>
     <color name="black">#FF000000</color>
     <color name="brown">#190606</color>
@@ -42,6 +52,7 @@
     <string name="buffalo_wings">Buffalo Wings</string>
     <string name="dca_signature_iced_coffee">DCA Signature Iced Coffee</string>
     <string name="default_web_client_id" translatable="false">821166714445-pntipm5k3ldtcq7dm62ur1r0o8725l96.apps.googleusercontent.com</string>
+    <string name="description">Description</string>
     <string name="drinks">DRINKS</string>
     <string name="edit_email">Email</string>
     <string name="edit_name">Name</string>
@@ -70,9 +81,12 @@
     <string name="location">Location</string>
     <string name="login_failed">"Login failed"</string>
     <string name="milkshakes">Milkshakes</string>
+    <string name="minus_button">Minus Button</string>
     <string name="name">Name</string>
     <string name="non_expresso_hot_drinks">Non Espresso Hot Drinks</string>
     <string name="non_expresso_ice_blended">Non Espresso Ice Blended</string>
+    <string name="plus_button">Plus Button</string>
+    <string name="price">Price</string>
     <string name="profemail">Email</string>
     <string name="profileEmail">email</string>
     <string name="profilePassword">password</string>
@@ -102,9 +116,6 @@
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
     </style>
-    <style name="CustomCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:buttonTint">@color/custom_checkbox_color</item>
-    </style>
     <style name="ScreenBackground"><item name="android:background">@color/white</item></style>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
@@ -125,4 +136,7 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
     </style>
+    <style name="roundedImageViewRounded">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item> </style>
 </resources>

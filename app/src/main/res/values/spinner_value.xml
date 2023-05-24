@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinner_values">
-        <item>All day Breakfast</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
-        <item>Value 2</item>
-        <item>Value 3</item>
+        <item>All Day Breakfast</item>
+        <item>Angus Beef</item>
+        <item>Rice Meals</item>
+        <item>Buffalo Wings</item>
+        <item>Belgian Waffles</item>
+        <item>Sandwiches</item>
+        <item>Grilled Fried Burgers</item>
+        <item>Apartment Style Pasta</item>
+        <item>Appetizers</item>
 
+        <item>Milkshakes</item>
+        <item>Slushies</item>
+        <item>Iced Tea Influsion</item>
+        <item>Home Yogurt</item>
+        <item>Soda Pop</item>
+        <item>Espresso Hot Drinks</item>
+        <item>Non Espresso Hot Drinks</item>
+        <item>Espresso Ice Blended</item>
+        <item>Non Espresso Ice Blended</item>
+        <item>DCA Signature Iced Coffee</item>
     </string-array>
 </resources>

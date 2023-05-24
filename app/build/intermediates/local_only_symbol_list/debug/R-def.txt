@@ -23,11 +23,16 @@ drawable allday
 drawable apartment
 drawable appetizers
 drawable background_splashscreen
+drawable baseline_add_24
+drawable baseline_delete_24
+drawable baseline_edit_24
 drawable baseline_exit
 drawable baseline_fastfood_24
 drawable baseline_mode_night_24
 drawable baseline_receipt_24
+drawable baseline_remove_24
 drawable baseline_search_24
+drawable baseline_search_24_clear
 drawable baseline_shopping_cart_24
 drawable baseline_shopping_cart_checkout_24
 drawable baseline_wb_sunny_24
@@ -35,6 +40,9 @@ drawable bg
 drawable bottom_background
 drawable brown_border
 drawable burgers
+drawable button_background_pressed
+drawable button_background_released
+drawable button_state
 drawable dca
 drawable dcas
 drawable drawer_border
@@ -155,7 +163,6 @@ id saveButton
 id search
 id settings
 id sld
-id spinner
 id su_button
 id su_email
 id su_login
@@ -221,6 +228,7 @@ string belgian_waffles
 string buffalo_wings
 string dca_signature_iced_coffee
 string default_web_client_id
+string description
 string drinks
 string edit_email
 string edit_name
@@ -249,9 +257,12 @@ string invalid_username
 string location
 string login_failed
 string milkshakes
+string minus_button
 string name
 string non_expresso_hot_drinks
 string non_expresso_ice_blended
+string plus_button
+string price
 string profemail
 string profileEmail
 string profilePassword
@@ -278,10 +289,10 @@ string title_username
 string welcome
 style CardBackground
 style CustomActivityAnimation
-style CustomCheckboxStyle
 style ScreenBackground
 style SplashScreen
 style TextColor
 style Theme.Dca
+style roundedImageViewRounded
 xml backup_rules
 xml data_extraction_rules

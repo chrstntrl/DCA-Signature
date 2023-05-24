@@ -36,20 +36,6 @@
             android:layout_margin="15dp"
             android:src="@drawable/uploadp" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/brown_border"
-            android:entries="@array/spinner_values"
-            android:fontFamily="@font/pop"
-            android:minHeight="48dp"
-            android:padding="10dp" />
 
         <EditText
             android:id="@+id/uploadName"

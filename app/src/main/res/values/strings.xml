@@ -63,5 +63,8 @@
     <string name="all_day_breakfast_title">"All Day Breakfast"</string>
     <string name="ricemeals">"Rice Meals"</string>
     <string name="angus_beef_franks">"Angus Beef Franks"</string>
-
+    <string name="plus_button">Plus Button</string>
+    <string name="minus_button">Minus Button</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
 </resources>
