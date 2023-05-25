@@ -1955,6 +1955,7 @@ dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
+dimen button_size
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2624,6 +2625,8 @@ drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
 drawable ic_menu
+drawable ic_minus_pressed
+drawable ic_minus_released
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2632,6 +2635,8 @@ drawable ic_notifications
 drawable ic_person
 drawable ic_person_pin
 drawable ic_phone
+drawable ic_plus_pressed
+drawable ic_plus_released
 drawable ic_settings
 drawable ic_share
 drawable ic_shopping_cart
@@ -2659,6 +2664,7 @@ drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable milkshake
+drawable minus_state
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2684,6 +2690,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable plus_state
 drawable rice
 drawable salad
 drawable sanwich
@@ -2707,16 +2714,11 @@ font pop
 id ALT
 id BOTTOM_END
 id BOTTOM_START
-id Br
 id CTRL
-id Drinks
 id FUNCTION
-id Foods
-id Gfb
 id LinearLayout1
 id META
 id NO_DEBUG
-id Rm
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2724,7 +2726,6 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id ab
 id about
 id accelerate
 id accessibility_action_clickable_span
@@ -2783,6 +2784,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addtocart
 id adjust_height
 id adjust_width
 id ald
@@ -2790,19 +2792,15 @@ id alertTitle
 id aligned
 id all
 id allStates
-id allday_layout
 id always
 id angusRecyclerView
 id angus_beef_recycler
-id angus_layout
 id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appe
 id arc
 id asConfigured
-id asp
 id async
 id auto
 id autoComplete
@@ -2829,7 +2827,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
-id bw
 id cache_measures
 id cancel_button
 id carryVelocity
@@ -2875,6 +2872,7 @@ id dca
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
+id decreaseTeam1
 id default_activity_button
 id deleteButton
 id deltaRelative
@@ -2962,6 +2960,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id homei
 id honorRequest
 id horizontal_only
 id icon
@@ -2971,9 +2970,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgs
 id immediateStop
-id include
 id included
+id increaseTeam1
 id info
 id instagram
 id invisible
@@ -3105,7 +3105,6 @@ id position
 id postLayout
 id profile
 id profileEmail
-id profileImg
 id profileName
 id profilePassword
 id profileUsername
@@ -3122,7 +3121,6 @@ id rectangles
 id recyclerView
 id reverseSawtooth
 id riceRecyclerView
-id rice_layout
 id rice_meal_title
 id right
 id rightToLeft
@@ -3135,6 +3133,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id score_1
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3165,7 +3164,6 @@ id showTitle
 id sin
 id skipCollapsed
 id skipped
-id sld
 id slide
 id snackbar_action
 id snackbar_text
@@ -3201,7 +3199,6 @@ id su_username
 id submenuarrow
 id submit_area
 id supportScrollUp
-id sw
 id switchMode
 id tabMode
 id tag_accessibility_actions
@@ -3386,6 +3383,7 @@ layout activity_food_sec
 layout activity_login
 layout activity_main
 layout activity_order
+layout activity_prod_details
 layout activity_profile
 layout activity_rice_meals
 layout activity_settings
@@ -3733,6 +3731,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4023,6 +4022,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style MinusButtons
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -4037,6 +4037,7 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style PlusButtons
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon
@@ -4054,6 +4055,8 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style ScoreButtons
+style ScoreText
 style ScreenBackground
 style ShapeAppearance_Material3_LargeComponent
 style ShapeAppearance_Material3_MediumComponent
@@ -4088,6 +4091,7 @@ style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
 style SplashScreen
+style TeamText
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar

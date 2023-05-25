@@ -1954,6 +1954,7 @@ int dimen activity_vertical_margin 0x7f070053
 int dimen appcompat_dialog_background_inset 0x7f070054
 int dimen browser_actions_context_menu_max_width 0x7f070055
 int dimen browser_actions_context_menu_min_padding 0x7f070056
+int dimen button_size 0x7f07024e
 int dimen cardview_compat_inset_shadow 0x7f070057
 int dimen cardview_default_elevation 0x7f070058
 int dimen cardview_default_radius 0x7f070059
@@ -2623,6 +2624,8 @@ int drawable ic_m3_chip_check 0x7f0800a8
 int drawable ic_m3_chip_checked_circle 0x7f0800a9
 int drawable ic_m3_chip_close 0x7f0800aa
 int drawable ic_menu 0x7f0800ab
+int drawable ic_minus_pressed 0x7f0800fc
+int drawable ic_minus_released 0x7f0800fd
 int drawable ic_mtrl_checked_circle 0x7f0800ac
 int drawable ic_mtrl_chip_checked_black 0x7f0800ad
 int drawable ic_mtrl_chip_checked_circle 0x7f0800ae
@@ -2631,6 +2634,8 @@ int drawable ic_notifications 0x7f0800b0
 int drawable ic_person 0x7f0800b1
 int drawable ic_person_pin 0x7f0800b2
 int drawable ic_phone 0x7f0800b3
+int drawable ic_plus_pressed 0x7f0800fe
+int drawable ic_plus_released 0x7f0800ff
 int drawable ic_settings 0x7f0800b4
 int drawable ic_share 0x7f0800b5
 int drawable ic_shopping_cart 0x7f0800b6
@@ -2658,6 +2663,7 @@ int drawable material_ic_keyboard_arrow_right_black_24dp 0x7f0800cb
 int drawable material_ic_menu_arrow_down_black_24dp 0x7f0800cc
 int drawable material_ic_menu_arrow_up_black_24dp 0x7f0800cd
 int drawable milkshake 0x7f0800ce
+int drawable minus_state 0x7f080100
 int drawable mtrl_dialog_background 0x7f0800cf
 int drawable mtrl_dropdown_arrow 0x7f0800d0
 int drawable mtrl_ic_arrow_drop_down 0x7f0800d1
@@ -2683,6 +2689,7 @@ int drawable notification_template_icon_bg 0x7f0800e4
 int drawable notification_template_icon_low_bg 0x7f0800e5
 int drawable notification_tile_bg 0x7f0800e6
 int drawable notify_panel_notification_icon_bg 0x7f0800e7
+int drawable plus_state 0x7f080101
 int drawable rice 0x7f0800e8
 int drawable salad 0x7f0800e9
 int drawable sanwich 0x7f0800ea
@@ -2706,16 +2713,11 @@ int font pop 0x7f090000
 int id ALT 0x7f0a0000
 int id BOTTOM_END 0x7f0a0001
 int id BOTTOM_START 0x7f0a0002
-int id Br 0x7f0a0003
 int id CTRL 0x7f0a0004
-int id Drinks 0x7f0a0005
 int id FUNCTION 0x7f0a0006
-int id Foods 0x7f0a0007
-int id Gfb 0x7f0a0008
 int id LinearLayout1 0x7f0a0009
 int id META 0x7f0a000a
 int id NO_DEBUG 0x7f0a000b
-int id Rm 0x7f0a000c
 int id SHIFT 0x7f0a000d
 int id SHOW_ALL 0x7f0a000e
 int id SHOW_PATH 0x7f0a000f
@@ -2723,7 +2725,6 @@ int id SHOW_PROGRESS 0x7f0a0010
 int id SYM 0x7f0a0011
 int id TOP_END 0x7f0a0012
 int id TOP_START 0x7f0a0013
-int id ab 0x7f0a0014
 int id about 0x7f0a0015
 int id accelerate 0x7f0a0016
 int id accessibility_action_clickable_span 0x7f0a0017
@@ -2782,6 +2783,7 @@ int id action_text 0x7f0a004b
 int id actions 0x7f0a004c
 int id activity_chooser_view_content 0x7f0a004d
 int id add 0x7f0a004e
+int id addtocart 0x7f0a0258
 int id adjust_height 0x7f0a004f
 int id adjust_width 0x7f0a0050
 int id ald 0x7f0a0051
@@ -2789,19 +2791,15 @@ int id alertTitle 0x7f0a0052
 int id aligned 0x7f0a0053
 int id all 0x7f0a0054
 int id allStates 0x7f0a0055
-int id allday_layout 0x7f0a0056
 int id always 0x7f0a0057
 int id angusRecyclerView 0x7f0a0058
 int id angus_beef_recycler 0x7f0a0059
-int id angus_layout 0x7f0a005a
 int id animateToEnd 0x7f0a005b
 int id animateToStart 0x7f0a005c
 int id antiClockwise 0x7f0a005d
 int id anticipate 0x7f0a005e
-int id appe 0x7f0a005f
 int id arc 0x7f0a0060
 int id asConfigured 0x7f0a0061
-int id asp 0x7f0a0062
 int id async 0x7f0a0063
 int id auto 0x7f0a0064
 int id autoComplete 0x7f0a0065
@@ -2828,7 +2826,6 @@ int id browser_actions_menu_item_text 0x7f0a0079
 int id browser_actions_menu_items 0x7f0a007a
 int id browser_actions_menu_view 0x7f0a007b
 int id buttonPanel 0x7f0a007d
-int id bw 0x7f0a007e
 int id cache_measures 0x7f0a007f
 int id cancel_button 0x7f0a0080
 int id carryVelocity 0x7f0a0085
@@ -2874,6 +2871,7 @@ int id dca 0x7f0a00ac
 int id decelerate 0x7f0a00ad
 int id decelerateAndComplete 0x7f0a00ae
 int id decor_content_parent 0x7f0a00af
+int id decreaseTeam1 0x7f0a0259
 int id default_activity_button 0x7f0a00b0
 int id deleteButton 0x7f0a00b1
 int id deltaRelative 0x7f0a00b2
@@ -2961,6 +2959,7 @@ int id header_title 0x7f0a0103
 int id hideable 0x7f0a0104
 int id home 0x7f0a0105
 int id homeAsUp 0x7f0a0106
+int id homei 0x7f0a0256
 int id honorRequest 0x7f0a0107
 int id horizontal_only 0x7f0a0108
 int id icon 0x7f0a0109
@@ -2970,9 +2969,10 @@ int id ifRoom 0x7f0a010c
 int id ignore 0x7f0a010d
 int id ignoreRequest 0x7f0a010e
 int id image 0x7f0a010f
+int id imgs 0x7f0a0257
 int id immediateStop 0x7f0a0110
-int id include 0x7f0a0111
 int id included 0x7f0a0112
+int id increaseTeam1 0x7f0a025a
 int id info 0x7f0a0113
 int id instagram 0x7f0a0114
 int id invisible 0x7f0a0115
@@ -3104,7 +3104,6 @@ int id position 0x7f0a0192
 int id postLayout 0x7f0a0193
 int id profile 0x7f0a0195
 int id profileEmail 0x7f0a0196
-int id profileImg 0x7f0a0197
 int id profileName 0x7f0a0198
 int id profilePassword 0x7f0a0199
 int id profileUsername 0x7f0a019a
@@ -3121,7 +3120,6 @@ int id rectangles 0x7f0a01a4
 int id recyclerView 0x7f0a01a5
 int id reverseSawtooth 0x7f0a01a6
 int id riceRecyclerView 0x7f0a01a7
-int id rice_layout 0x7f0a01a8
 int id rice_meal_title 0x7f0a01a9
 int id right 0x7f0a01aa
 int id rightToLeft 0x7f0a01ab
@@ -3134,6 +3132,7 @@ int id save_non_transition_alpha 0x7f0a01b1
 int id save_overlay_view 0x7f0a01b2
 int id sawtooth 0x7f0a01b3
 int id scale 0x7f0a01b4
+int id score_1 0x7f0a025b
 int id screen 0x7f0a01b5
 int id scroll 0x7f0a01b6
 int id scrollIndicatorDown 0x7f0a01b7
@@ -3164,7 +3163,6 @@ int id showTitle 0x7f0a01cf
 int id sin 0x7f0a01d0
 int id skipCollapsed 0x7f0a01d1
 int id skipped 0x7f0a01d2
-int id sld 0x7f0a01d3
 int id slide 0x7f0a01d4
 int id snackbar_action 0x7f0a01d5
 int id snackbar_text 0x7f0a01d6
@@ -3200,7 +3198,6 @@ int id su_username 0x7f0a01f3
 int id submenuarrow 0x7f0a01f4
 int id submit_area 0x7f0a01f5
 int id supportScrollUp 0x7f0a01f6
-int id sw 0x7f0a01f7
 int id switchMode 0x7f0a01f8
 int id tabMode 0x7f0a01f9
 int id tag_accessibility_actions 0x7f0a01fa
@@ -3385,6 +3382,7 @@ int layout activity_food_sec 0x7f0d0026
 int layout activity_login 0x7f0d0027
 int layout activity_main 0x7f0d0028
 int layout activity_order 0x7f0d0029
+int layout activity_prod_details 0x7f0d008f
 int layout activity_profile 0x7f0d002a
 int layout activity_rice_meals 0x7f0d002b
 int layout activity_settings 0x7f0d002c
@@ -3732,6 +3730,7 @@ int style Animation_AppCompat_DropDownUp 0x7f130004
 int style Animation_AppCompat_Tooltip 0x7f130005
 int style Animation_Design_BottomSheetDialog 0x7f130006
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f130007
+int style AppTheme 0x7f130401
 int style Base_AlertDialog_AppCompat 0x7f130008
 int style Base_AlertDialog_AppCompat_Light 0x7f130009
 int style Base_Animation_AppCompat_Dialog 0x7f13000a
@@ -4022,6 +4021,7 @@ int style MaterialAlertDialog_MaterialComponents_Title_Panel 0x7f130126
 int style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked 0x7f130127
 int style MaterialAlertDialog_MaterialComponents_Title_Text 0x7f130128
 int style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked 0x7f130129
+int style MinusButtons 0x7f130402
 int style Platform_AppCompat 0x7f13012a
 int style Platform_AppCompat_Light 0x7f13012b
 int style Platform_MaterialComponents 0x7f13012c
@@ -4036,6 +4036,7 @@ int style Platform_V21_AppCompat_Light 0x7f130134
 int style Platform_V25_AppCompat 0x7f130135
 int style Platform_V25_AppCompat_Light 0x7f130136
 int style Platform_Widget_AppCompat_Spinner 0x7f130137
+int style PlusButtons 0x7f130403
 int style RtlOverlay_DialogWindowTitle_AppCompat 0x7f130138
 int style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem 0x7f130139
 int style RtlOverlay_Widget_AppCompat_DialogTitle_Icon 0x7f13013a
@@ -4053,6 +4054,8 @@ int style RtlOverlay_Widget_AppCompat_Search_DropDown_Text 0x7f130145
 int style RtlOverlay_Widget_AppCompat_SearchView_MagIcon 0x7f130146
 int style RtlUnderlay_Widget_AppCompat_ActionButton 0x7f130147
 int style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow 0x7f130148
+int style ScoreButtons 0x7f130404
+int style ScoreText 0x7f130405
 int style ScreenBackground 0x7f130149
 int style ShapeAppearance_Material3_LargeComponent 0x7f13014a
 int style ShapeAppearance_Material3_MediumComponent 0x7f13014b
@@ -4087,6 +4090,7 @@ int style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox 0x
 int style ShapeAppearanceOverlay_TopLeftCut 0x7f130168
 int style ShapeAppearanceOverlay_TopRightDifferentCornerSize 0x7f130169
 int style SplashScreen 0x7f13016a
+int style TeamText 0x7f130406
 int style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day 0x7f13016b
 int style Test_Theme_MaterialComponents_MaterialCalendar 0x7f13016c
 int style Test_Widget_MaterialComponents_MaterialCalendar 0x7f13016d

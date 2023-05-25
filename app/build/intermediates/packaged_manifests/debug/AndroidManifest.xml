@@ -24,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Dca" >
         <activity
+            android:name="com.example.dca.ProdDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.dca.UpdateActivity"
             android:exported="false" />
         <activity

@@ -20,6 +20,10 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\burgers.JPG"
     },
     {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_minus_state.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/minus_state.xml"
+    },
+    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_ic_baseline_email_24.xml.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\ic_baseline_email_24.xml"
     },
@@ -54,10 +58,6 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\mipmap-xxxhdpi_ic_fb.png.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\mipmap-xxxhdpi\\ic_fb.png"
-    },
-    {
-        "merged": "com.example.dca.app-merged_res-37:/layout_activity_admin_panel.xml.flat",
-        "source": "com.example.dca.app-main-39:/layout/activity_admin_panel.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_baseline_delete_24.xml.flat",
@@ -160,6 +160,10 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\item_selector.xml"
     },
     {
+        "merged": "com.example.dca.app-merged_res-37:/layout_activity_profile.xml.flat",
+        "source": "com.example.dca.app-main-39:/layout/activity_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_logo.png.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\logo.png"
     },
@@ -258,6 +262,10 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_wing.JPG.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\wing.JPG"
+    },
+    {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_ic_minus_released.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/ic_minus_released.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\layout_activity_settings.xml.flat",
@@ -396,6 +404,10 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\mipmap-hdpi\\ic_instagram.png"
     },
     {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_ic_minus_pressed.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/ic_minus_pressed.xml"
+    },
+    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_waffles.JPG.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\drawable\\waffles.JPG"
     },
@@ -436,6 +448,14 @@
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\mipmap-xhdpi\\ic_fb.png"
     },
     {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_ic_plus_pressed.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/ic_plus_pressed.xml"
+    },
+    {
+        "merged": "com.example.dca.app-merged_res-37:/layout_activity_prod_details.xml.flat",
+        "source": "com.example.dca.app-main-39:/layout/activity_prod_details.xml"
+    },
+    {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\layout_recycler_item.xml.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\layout\\recycler_item.xml"
     },
@@ -454,6 +474,10 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\mipmap-xhdpi_ic_instagram.png.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\mipmap-xhdpi\\ic_instagram.png"
+    },
+    {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_ic_plus_released.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/ic_plus_released.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\drawable_baseline_remove_24.xml.flat",
@@ -590,6 +614,10 @@
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\layout_activity_food_sec.xml.flat",
         "source": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-main-39:\\layout\\activity_food_sec.xml"
+    },
+    {
+        "merged": "com.example.dca.app-merged_res-37:/drawable_plus_state.xml.flat",
+        "source": "com.example.dca.app-main-39:/drawable/plus_state.xml"
     },
     {
         "merged": "C:\\Users\\norie\\.gradle\\daemon\\7.5\\com.example.dca.app-merged_res-37:\\layout_activity_detail.xml.flat",

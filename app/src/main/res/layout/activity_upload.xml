@@ -28,15 +28,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upload Data"
+                android:text="Upload Product"
                 android:textSize="30sp"
                 android:textAlignment="center"
                 android:textColor="@color/brown"/>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/uploadp"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/uploadImage"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitXY"/>
@@ -48,7 +49,7 @@
                 android:background="@drawable/brown_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter topic name"
+                android:hint="Enter product name"
                 android:gravity="start|center_vertical"
                 android:textColor="@color/brown"/>
 
@@ -59,7 +60,7 @@
                 android:background="@drawable/brown_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter description"
+                android:hint="Enter product description"
                 android:gravity="start|center_vertical"
                 android:textColor="@color/brown"/>
 
@@ -70,9 +71,10 @@
                 android:background="@drawable/brown_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter language"
+                android:hint="Enter price"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/brown"/>
+                android:textColor="@color/brown"
+                android:inputType="number"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -81,7 +83,8 @@
                 android:id="@+id/saveButton"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"
-                app:cornerRadius = "20dp"/>
+                app:cornerRadius = "20dp"
+                />
 
         </LinearLayout>
 

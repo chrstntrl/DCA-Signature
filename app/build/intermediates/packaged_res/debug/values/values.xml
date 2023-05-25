@@ -38,6 +38,7 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_size">50dp</dimen>
     <string name="about">ABOUT</string>
     <string name="acc">For more information visit or contact us on our social media accounts.</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -113,16 +114,34 @@
     <string name="title_name">Name</string>
     <string name="title_username">username</string>
     <string name="welcome">"Welcome !"</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar"/>
     <style name="CardBackground"><item name="android:background">@color/white</item></style>
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+    <style name="MinusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/minus_state</item>
+        <item name="android:contentDescription">@string/minus_button</item>
+    </style>
+    <style name="PlusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/plus_state</item>
+        <item name="android:contentDescription">@string/plus_button</item>
+    </style>
+    <style name="ScoreButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_state</item>
+    </style>
+    <style name="ScoreText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display3</item>
     </style>
     <style name="ScreenBackground"><item name="android:background">@color/white</item></style>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
         <item name="android:statusBarColor">@color/black</item>
 
+    </style>
+    <style name="TeamText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
     </style>
     <style name="TextColor"><item name="android:textColor">@color/black</item></style>
     <style name="Theme.Dca" parent="Theme.MaterialComponents.DayNight.NoActionBar">

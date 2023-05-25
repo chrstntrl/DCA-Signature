@@ -57,7 +57,7 @@ public class UpdateActivity extends AppCompatActivity {
                             uri = data.getData();
                             updateImage.setImageURI(uri);
                         } else {
-                            Toast.makeText(UpdateActivity.this, "No Image Selected", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(UpdateActivity.this, "Please Select an image.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -124,7 +124,7 @@ public class UpdateActivity extends AppCompatActivity {
                 if (task.isSuccessful()){
                     StorageReference reference = FirebaseStorage.getInstance().getReferenceFromUrl(oldImageURL);
                     reference.delete();
-                    Toast.makeText(UpdateActivity.this, "Updated", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateActivity.this, "Product Updated", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }
