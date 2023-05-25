@@ -40,49 +40,49 @@
 25-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:12:9-41
 26        <activity
 26-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:14:9-16:40
-27            android:name="com.example.dca.orderActivity"
-27-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:15:13-42
+27            android:name="com.example.dca.UpdateActivity"
+27-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:15:13-43
 28            android:exported="false" />
 28-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:16:13-37
 29        <activity
 29-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:17:9-19:40
-30            android:name="com.example.dca.rice_meals"
-30-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:18:13-39
+30            android:name="com.example.dca.DetailActivity"
+30-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:18:13-43
 31            android:exported="false" />
 31-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:19:13-37
 32        <activity
 32-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:20:9-22:40
-33            android:name="com.example.dca.angus_beef"
-33-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:21:13-39
+33            android:name="com.example.dca.UploadActivity"
+33-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:21:13-43
 34            android:exported="false" />
 34-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:22:13-37
 35        <activity
 35-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:23:9-25:40
-36            android:name="com.example.dca.adminDelete"
-36-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:24:13-40
+36            android:name="com.example.dca.AdminPanel"
+36-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:24:13-39
 37            android:exported="false" />
 37-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:25:13-37
 38        <activity
 38-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:26:9-28:40
-39            android:name="com.example.dca.adminUpdate"
-39-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:27:13-40
+39            android:name="com.example.dca.orderActivity"
+39-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:27:13-42
 40            android:exported="false" />
 40-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:28:13-37
 41        <activity
 41-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:29:9-31:40
-42            android:name="com.example.dca.adminAdd"
-42-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:30:13-37
+42            android:name="com.example.dca.rice_meals"
+42-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:30:13-39
 43            android:exported="false" />
 43-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:31:13-37
 44        <activity
 44-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:32:9-34:40
-45            android:name="com.example.dca.adminOrder"
+45            android:name="com.example.dca.angus_beef"
 45-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:33:13-39
 46            android:exported="false" />
 46-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:34:13-37
 47        <activity
 47-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:35:9-37:40
-48            android:name="com.example.dca.AdminPanel"
+48            android:name="com.example.dca.adminOrder"
 48-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:36:13-39
 49            android:exported="false" />
 49-->C:\Users\norie\Documents\GitHub\DCA-Signature\app\src\main\AndroidManifest.xml:37:13-37

@@ -24,6 +24,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.Dca" >
         <activity
+            android:name="com.example.dca.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dca.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dca.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dca.AdminPanel"
+            android:exported="false" />
+        <activity
             android:name="com.example.dca.orderActivity"
             android:exported="false" />
         <activity
@@ -33,19 +45,7 @@
             android:name="com.example.dca.angus_beef"
             android:exported="false" />
         <activity
-            android:name="com.example.dca.adminDelete"
-            android:exported="false" />
-        <activity
-            android:name="com.example.dca.adminUpdate"
-            android:exported="false" />
-        <activity
-            android:name="com.example.dca.adminAdd"
-            android:exported="false" />
-        <activity
             android:name="com.example.dca.adminOrder"
-            android:exported="false" />
-        <activity
-            android:name="com.example.dca.AdminPanel"
             android:exported="false" />
         <activity
             android:name="com.example.dca.food_sec"

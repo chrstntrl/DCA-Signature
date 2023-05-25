@@ -1,35 +1,45 @@
 package com.example.dca;
 
+
 public class DataClass {
-    private String prodName;
-    private String prodDesc;
-    private String prodPrice;
-    private String prodImage;
+
+    private String dataTitle;
+    private String dataDesc;
+    private String dataLang;
+    private String dataImage;
     private String key;
+
     public String getKey() {
         return key;
     }
+
     public void setKey(String key) {
         this.key = key;
     }
-    public String getprodName() {
-        return prodName;
+
+    public String getDataTitle() {
+        return dataTitle;
     }
-    public String getprodDesc() {
-        return prodDesc;
+
+    public String getDataDesc() {
+        return dataDesc;
     }
-    public String getprodPrice() {
-        return prodPrice;
+
+    public String getDataLang() {
+        return dataLang;
     }
-    public String getprodImage() {
-        return prodImage;
+
+    public String getDataImage() {
+        return dataImage;
     }
-    public DataClass(String prodName, String prodDesc, String prodPrice, String prodImage) {
-        this.prodName = prodName;
-        this.prodDesc = prodDesc;
-        this.prodPrice = prodPrice;
-        this.prodImage = prodImage;
+
+    public DataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
+        this.dataTitle = dataTitle;
+        this.dataDesc = dataDesc;
+        this.dataLang = dataLang;
+        this.dataImage = dataImage;
     }
     public DataClass(){
+
     }
 }

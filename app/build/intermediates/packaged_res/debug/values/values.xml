@@ -26,11 +26,13 @@
     <color name="brown">#190606</color>
     <color name="custom_checkbox_color">#190606</color>
     <color name="darkGrey">#ff424242</color>
+    <color name="green">#1DA11D</color>
     <color name="grey">#aaa</color>
     <color name="ic_dsa_launcher_background">#1F0D0D</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#570101</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>

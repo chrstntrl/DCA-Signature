@@ -11,6 +11,7 @@
 
     <color name="grey">#aaa</color>
     <color name="darkGrey">#ff424242</color>
-
+    <color name="red">#570101</color>
+    <color name="green">#1DA11D</color>
     <color name="custom_checkbox_color">#190606</color>
 </resources>
