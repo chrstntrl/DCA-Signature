@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/bg"
     tools:context=".SignupActivity">
 
     <androidx.cardview.widget.CardView
@@ -18,67 +20,73 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/brown_border"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/brown_border">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Sign Up"
                 android:fontFamily="@font/pop"
-                android:text="Sign up"
-                android:textAlignment="center"
-                android:textColor="@color/black"
                 android:textSize="36sp"
+                android:textAlignment="center"
                 android:textStyle="bold"
-                android:inputType="textPersonName"/>
+                android:textColor="@color/black"/>
 
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:id="@+id/su_name"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:background="@drawable/brown_border"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/brown_border"
-                android:drawableLeft="@drawable/ic_person"
-                android:hint=" Enter your name"
                 android:padding="8dp"
-                android:textColor="@color/black"
-                android:inputType="textEmailAddress"/>
+                android:hint="Enter your name"
+                android:fontFamily="@font/pop"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
 
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:id="@+id/su_email"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/brown_border"
-                android:drawableLeft="@drawable/ic__email"
-                android:hint=" Enter your email"
+                android:layout_marginTop="20dp"
                 android:padding="8dp"
-                android:textColor="@color/black" />
+                android:hint="Enter your email"
+                android:fontFamily="@font/pop"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
 
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:id="@+id/su_username"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/brown_border"
-                android:drawableLeft="@drawable/ic_person_pin"
-                android:hint=" Enter your username"
+                android:layout_marginTop="20dp"
                 android:padding="8dp"
-                android:textColor="@color/black" />
+                android:hint="Enter your username"
+                android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/su_pass"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:id="@+id/su_pass"
                 android:background="@drawable/brown_border"
-                android:drawableLeft="@drawable/ic_lock"
-                android:hint=" Enter your password"
+                android:layout_marginTop="20dp"
                 android:padding="8dp"
+                android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="@color/black" />
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/su_button"
@@ -88,25 +96,24 @@
                 android:background="@drawable/brown_border"
                 android:padding="8dp"
                 android:text="Sign Up"
+                android:fontFamily="@font/pop"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
             <TextView
-                android:id="@+id/su_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/pop"
-                android:padding="8dp"
+                android:id="@+id/su_login"
                 android:text="Already have an account? Login"
+                android:fontFamily="@font/pop"
                 android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/black"
                 android:textSize="14sp"/>
-
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>
